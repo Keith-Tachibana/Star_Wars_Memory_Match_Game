@@ -117,15 +117,15 @@ target="_blank">Slides</a>
 >>  - *Game Area*
 >>      - Element with:
 >>          - class of *“game-area”*
->>              - 9 matching card elements (18 total) inside with each element having:
->>                  - class of **“card”**
->>                  - Inside:
->>                      - Card front element with:
+>>          - 9 matching card elements (18 total) inside with each element having:
+>>              - class of **“card”**
+>>              - Inside:
+>>                  - Card front element with:
 >>                      - class **“front”**
->>                        - img element inside with a valid source
->>                    - Card back element with:
->>                        - class **“back”**
->>                        - img element inside with a valid
+>>                      - img element inside with a valid source
+>>                  - Card back element with:
+>>                      - class **“back”**
+>>                      - img element inside with a valid
 
 > ##### Add Functionality:**
 >>  - Inside of the head tag link the following javascript files in order
