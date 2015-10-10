@@ -102,17 +102,17 @@ target="_blank">Slides</a>
 >>      - element that has a class of **“games-played”**, inside this container:
 >>          - element with class **"label"** with the text **“Games Played”**
 >>          - element with class **"value"** with no text
->>      - Attempts (number of times the user has clicked on cards)
->>        - element that has a class of **“attempts”**, inside this container:
+>>    - Attempts (number of times the user has clicked on cards)
+>>      - element that has a class of **“attempts”**, inside this container:
 >>          - element with class **"label"** with the text **“attempts”**
 >>          - element with class **"value"** with no text
->>      - Accuracy (how many times they got it right / number of total clicks for the current game)
->>        - element that has a class of **“accuracy”**, inside this container:
+>>    - Accuracy (how many times they got it right / number of total clicks for the current game)
+>>      - element that has a class of **“accuracy”**, inside this container:
 >>          - element with class **"label"** with the text **“Accuracy”**
 >>          - element with class **"value"** with no text
->>      - Button Element with:
->>        - class of **“reset”**
->>        - Text of **“Reset Game”**
+>>    - Button Element with:
+>>          - class of **“reset”**
+>>          - Text of **“Reset Game”**
 
 >>  - *Game Area*
 >>      - Element with:
