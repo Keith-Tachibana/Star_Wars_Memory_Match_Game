@@ -100,8 +100,8 @@ target="_blank">Slides</a>
 >>  - *Stats Container*
 >>    - Games Played
 >>      - element that has a class of **“games-played”**, inside this container:
->>        - element with class **"label"** with the text **“Games Played”**
->>        - element with class **"value"** with no text
+>>          - element with class **"label"** with the text **“Games Played”**
+>>          - element with class **"value"** with no text
 >>      - Attempts (number of times the user has clicked on cards)
 >>        - element that has a class of **“attempts”**, inside this container:
 >>          - element with class **"label"** with the text **“attempts”**
