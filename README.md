@@ -10,8 +10,8 @@ accuracy of their choices.
 > <a href="https://drive.google.com/open?id=0B7eOl4joefDuWTRUQWU0eXdtRzg" target="_blank">Design Overview</a>
 
 > ### Versions
-> - Version 0.5 (v0.5) - View Details
-> - Version 0.1 (v0.1) - View Details
+> - Version 0.5 (v0.5) - <a href="https://github.com/Learning-Fuze/memory_match/tree/v0.5#version-05-v05">View Details</a>
+> - Version 0.1 (v0.1) - <a href="https://github.com/Learning-Fuze/memory_match/tree/v0.5#version-01-v01">View Details</a>
 
 ## Version 0.5 (v0.5)
 
