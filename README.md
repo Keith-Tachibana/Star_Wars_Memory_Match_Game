@@ -8,7 +8,7 @@ displayed a message that they have won the game. As the user clicks through the 
 accuracy of their choices.
 
 > <a href="https://docs.google.com/presentation/d/1zlSHYatpaPsrq4LuOtyuE-RRIom4vRo-lXovQ0zPV0U/pub?start=false&loop=false&delayms=3000" target="_blank">Design Overview</a>
-> <a href="https://drive.google.com/open?id=0B3R9g7F9YRS6SHd3Q3lRdWF0RkU" target="_blank">Flow Document</a>
+<a href="https://drive.google.com/open?id=0B3R9g7F9YRS6SHd3Q3lRdWF0RkU" target="_blank">Flow Document</a>
 
 > ### Versions
 > - Version 1.0 (v1.0) - <a href="https://github.com/Learning-Fuze/memory_match/tree/v1.0">View Details</a>
