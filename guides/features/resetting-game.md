@@ -43,4 +43,4 @@ In this feature, you will want to create a skeleton of elements with any additio
   ![Merge pull request](../post-feature/merge-pull-request.gif)
   5. Update master with the new changes:
   ![Update master](../post-feature/pull-new-changes.gif)
-  6. Go back to [Features](../../README.md), if you're still working through the project.
+  6. Go back to [Features](../../README.md#features), if you're still working through the project.
