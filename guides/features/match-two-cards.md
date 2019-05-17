@@ -3,31 +3,43 @@ Instructions - Match Two Cards
 
 ### Overview
 
-In this feature, a third card will be introduced in order to update the functionality to check for properly matched cards and mismatched cards. 
+In this feature, a third card will be introduced in order to update the functionality to check for properly matched cards and mismatched cards.
 
 ### Feature Set
 
 1. In your `index.html`, uncomment one more card.
-   - There should be a total of three cards displaying on the page. 
-2. In your `script.js`, create three variables:
-   - `firstCard`
-   - `secondCard`
+   - Apply background images to the child divs
+    - Make sure that two of the instructor images match on the second child divs
+    - There should be a total of three cards displaying on the page.
+2. In your `script.js`, declare three variables in the global space near the top of the page:
+   - `firstCardClicked`
+   - `secondCardClicked`
    - `matches`
-3. During each click of the cards:
-   - If you've clicked on the first card, you will want to store that card in the `firstCard` variable.
-   - If you've clicked on the second card, you will want to store that card in the `secondCard` variable.
+   - Set their initial values to `null`
+3. Now when you click on the cards:
+   - Store the jQuery reference for the first card you clicked in the `firstCardClicked` variable.
+   - And store the jQuery reference for the second card you clicked in the `secondCardClicked` variable.
 4. After storing the second card:
-   - If both cards **match**, increase the `matches` variable by one.
-   - If both cards **do not match**, flip both cards back and reveal their card backs.
+   - Check if the background image urls  for the instructor images on the second child divs of `firstCardClicked` and `secondCardClicked` match
+      - To do this:
+        - Use jQuery to select the second child div (where the of each card and then retrieve the CSS data you need from it
+        - For a hint 
+          - Search Google "jquery retrieve css value"
+    - If the urls match
+      - console.log "cards match"
+      - increase the value of the `matches` variable by 1
+
+    - If both cards **do not match**,
+      - Flip the cards back.
 
 ### Design Docs
 
-<!-- TODO Will have design docs located here 
+#### Matching Two Cards
+![match two cards](../feature-gifs/match-two-cards.gif)
+#### Flipping Cards Back
+![flip cards back](../feature-gifs/flip-card-back.gif)
 
-- Bullet
-![Alt-text-for-image](/path/to/image.jpg)
 
--->
 
 
 ### After Each Feature
@@ -45,7 +57,7 @@ In this feature, a third card will be introduced in order to update the function
 
   1. Navigate to <kbd>New Pull Request</kbd>:
   ![Navigate to pull requests](../post-feature/navigate-to-pull-request.gif)
-  2. Compare changes to merge: 
+  2. Compare changes to merge:
   ![Compare changes to merge](../post-feature/compare-changes.gif)
   3. Create a new pull request:
   ![Create new pull request](../post-feature/create-pull-request.gif)

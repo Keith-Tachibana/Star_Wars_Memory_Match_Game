@@ -25,24 +25,31 @@ In this feature:
 4. Now that the HTML is prepared, use jQuery to select your single card.
     - Add a click handler to that card.
     - This click handler will call a function called `handleCardClick`.
-5.  Next, declare a function, `handleCardClick`
+5. Next, declare a function, `handleCardClick`
     - This function will take a single parameter:
       - The parameter will be named `event`.
       - It will contain the `event` object that is passed forward by your click handler.
       - The `event` object will contain the information you need to target specific cards.
     - Initially, this function only needs to hide the first child div of the card you have clicked on.
+      - To hide the card:
+        - create a CSS class selector called `.hidden`
+        - in the selector, add `display: none`
+        - Use jQuery to select the first child div of the card you clicked on
+         - Remember, that is where you added the card back image as a background image!
+        - Use jQuery to add the `hidden` class to the first child div you selected
       - Remember, that is where you added the card back image as a background image!
       - Once the first child is hidden, the background image of the instructor you added to the second child should be revealed.
 
 6. After you achieve "flipping the card":
-    - Uncomment the next card
+    - Uncomment the next card.
     - Add the background images as you did for the first card.
     - Make sure that clicking on the cards flips only the card you click on.
       - Remember the `event` object?
-      - The data you need is in there!
+      - The data you need if both cards are flipping is in there!
 
 ### Design Docs
 
+#### Flip One Card
 ![gif of card flip](../feature-gifs/flip-one-card.gif)
 
 ### After Each Feature
