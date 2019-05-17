@@ -12,9 +12,10 @@ In this feature, you will now begin working with all the cards to introduce stat
    - `attempts`
    - `accuracy`
    - `games_played`
-3. Modify your existing `flipCard` function. During the exectution of code when this function gets called, determine:
-   - When an `attempt` is made and increasing the count of this variable accordingdly.
-   - After completing the game, then increase the count of the `games_played` variable accordingly.
+3. Modify your existing `flipCard` function. 
+   - Determine during the execution of code when this function gets called:
+     - When an `attempt` is made, increase the count of this variable by `1`.
+     - When the game is complete, increase the count of the `games_played` variable by `1`.
 4. Create a function, `displayStats`.
    - This function will select the appropriate child elements inside of the `<aside>` and change the text with the values inside of the our stats variables:
      - `matches`
