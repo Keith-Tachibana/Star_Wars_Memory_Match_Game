@@ -5,15 +5,28 @@ Instructions - Flip One Card
 
 In this feature, you are adding the functionality that will reveal one card once it is clicked. After, you will then include a second card to reveal the card individually to then be used to match cards. 
 
-- In your `index.html`, add a `<script>` tag with the `src` for the **jQuery** library.
-  - https://code.jquery.com/jquery-3.1.0.js
-- Create a `script.js` file and include this in a separate `<script>` tag in your `index.html` file.
-- 
+### Feature Set
 
-<!-- TODO Will have design docs located here -->
+1. In your `index.html`, add a `<script>` tag with the `src` for the **jQuery** library.
+   - https://code.jquery.com/jquery-3.1.0.js
+2. Create a `script.js` file and include this in a separate `<script>` tag in your `index.html` file.
+3. Start by commenting out all the other cards and leave two remaining.
+4. Create a function, `flipCard`, that will be called when clicking on each of the cards on the webpage.
+   - Once clicked, the card's back will be hidden and the front will be revealed.
+5. Modify the `flipCard` function, to only flip the card that you have clicked on.
+   - Hint: You may want to use `event.target` or `event.currentTarget`.
+
+### Design Docs
+
+<!-- TODO Will have design docs located here 
+
+- Bullet
+![Alt-text-for-image](/path/to/image.jpg)
+
+-->
 
 
-### After each challenge
+### After Each Feature
 
 - When your feature implementation is complete, you will want to save and submit your work to the branch that you have created.
   - Use `git status` to check that you are on the correct branch that represents your feature.
