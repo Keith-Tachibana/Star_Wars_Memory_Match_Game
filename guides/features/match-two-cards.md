@@ -19,9 +19,16 @@ In this feature, you will currently have two cards that will be displaying and p
    - If both cards **do not match**, flip both cards back and reveal their card backs.
 
 ### Design Docs
-<!-- TODO Will have design docs located here -->
 
-### After each challenge
+<!-- TODO Will have design docs located here 
+
+- Bullet
+![Alt-text-for-image](/path/to/image.jpg)
+
+-->
+
+
+### After Each Feature
 
 - When your feature implementation is complete, you will want to save and submit your work to the branch that you have created.
   - Use `git status` to check that you are on the correct branch that represents your feature.

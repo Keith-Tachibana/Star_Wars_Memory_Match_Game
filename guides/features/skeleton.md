@@ -21,7 +21,7 @@ In this feature, you are creating the skeleton of elements that will hold any ad
 -->
 
 
-### After each challenge
+### After Each Feature
 
 - When your feature implementation is complete, you will want to save and submit your work to the branch that you have created.
   - Use `git status` to check that you are on the correct branch that represents your feature.

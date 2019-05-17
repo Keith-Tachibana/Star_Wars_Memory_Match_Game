@@ -10,10 +10,17 @@ In this feature, you will want to create a skeleton of elements with any additio
   - `<aside>`, will be used to hold data / information regarding game stats.
   - `<main>`, will be used to hold the cards to play through your Memory Match game.
 
-<!-- TODO Will have design docs located here -->
+### Design Docs
+
+<!-- TODO Will have design docs located here 
+
+- Bullet
+![Alt-text-for-image](/path/to/image.jpg)
+
+-->
 
 
-### After each challenge
+### After Each Feature
 
 - When your feature implementation is complete, you will want to save and submit your work to the branch that you have created.
   - Use `git status` to check that you are on the correct branch that represents your feature.
