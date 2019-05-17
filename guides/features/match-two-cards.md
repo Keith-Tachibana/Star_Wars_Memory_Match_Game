@@ -3,18 +3,20 @@ Instructions - Match Two Cards
 
 ### Overview
 
-In this feature, you will currently have two cards that will be displaying and providing the functionality to properly match the two cards.
+In this feature, a third card will be introduced in order to update the functionality to check for properly matched cards and mismatched cards. 
 
 ### Feature Set
 
-1. In your `script.js`, create three variables:
+1. In your `index.html`, uncomment one more card.
+   - There should be a total of three cards displaying on the page. 
+2. In your `script.js`, create three variables:
    - `firstCard`
    - `secondCard`
    - `matches`
-2. During each click of the cards:
+3. During each click of the cards:
    - If you've clicked on the first card, you will want to store that card in the `firstCard` variable.
    - If you've clicked on the second card, you will want to store that card in the `secondCard` variable.
-3. After storing the second card:
+4. After storing the second card:
    - If both cards **match**, increase the `matches` variable by one.
    - If both cards **do not match**, flip both cards back and reveal their card backs.
 

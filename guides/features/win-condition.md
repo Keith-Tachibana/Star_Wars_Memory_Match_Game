@@ -3,12 +3,22 @@ Instructions - Win Condition
 
 ### Overview
 
-In this feature, you will want to create a skeleton of elements with any additional child elements that will make up the project you are creating.
+In this feature, a fourth card will be used to complete the base functionality of this project to "win" the game. We will be accomplishing this by matching two pairs of cards and displaying a modal.
 
-- In an `index.html` file, your `<body>` will have three main sections:
-  - `<header>`, will be used for a heading and/or logo.
-  - `<aside>`, will be used to hold data / information regarding game stats.
-  - `<main>`, will be used to hold the cards to play through your Memory Match game.
+<details>
+   <summary>What is a modal?</summary>
+      A <a href="https://www.w3schools.com/howto/howto_css_modals.asp" target="_blank">modal</a> is a dialog bopopup window that is displayed on top of the current page.
+</details>
+
+### Feature Set
+
+1. In your `index.html`, uncomment another card.
+   - There should now be a total of four cards displaying on the page.
+2. In your `script.js`, introduce another variable:
+   - `total_matches`
+3. After each successful match of the two cards you have clicked, check your `matches` variable with the `total_matches` variable.
+   - If true, display the modal to verify that there is a "win". This will now complete the game.
+   - If false, nothing happens, the user will continue playing the game.
 
 ### Design Docs
 

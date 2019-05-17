@@ -3,12 +3,24 @@ Instructions - Tracking Stats
 
 ### Overview
 
-In this feature, you will want to create a skeleton of elements with any additional child elements that will make up the project you are creating.
+In this feature, you will now begin working with all the cards to introduce stats such as: `attempts`, `matches`, `accuracy`, and `games_played`. Additionally, you will be accurately displaying them as the user plays through the game.
 
-- In an `index.html` file, your `<body>` will have three main sections:
-  - `<header>`, will be used for a heading and/or logo.
-  - `<aside>`, will be used to hold data / information regarding game stats.
-  - `<main>`, will be used to hold the cards to play through your Memory Match game.
+### Feature Set
+
+1. In your `index.html`, uncomment all the cards. You should now have a total of 18 cards displaying on the page.
+2. In your `script.js`, begin by introducing the following variables:
+   - `attempts`
+   - `accuracy`
+   - `games_played`
+3. Modify your existing `flipCard` function. During the exectution of code when this function gets called, determine:
+   - When an `attempt` is made and increasing the count of this variable accordingdly.
+   - After completing the game, then increase the count of the `games_played` variable accordingly.
+4. Create a function, `displayStats`.
+   - This function will select the appropriate child elements inside of the `<aside>` and change the text with the values inside of the our stats variables:
+     - `matches`
+     - `attempts`
+     - `accuracy`
+     - `games_played`
 
 ### Design Docs
 
