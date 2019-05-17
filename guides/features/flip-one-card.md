@@ -32,11 +32,11 @@ In this feature:
       - The `event` object will contain the information you need to target specific cards.
     - Initially, this function only needs to hide the first child div of the card you have clicked on.
       - To hide the card:
-        - create a CSS class selector called `.hidden`
-        - in the selector, add `display: none`
-        - Use jQuery to select the first child div of the card you clicked on
+        - Create a CSS class selector called `.hidden`.
+        - In the selector, add `display: none`.
+        - Use jQuery to select the first child div of the card you clicked on.
          - Remember, that is where you added the card back image as a background image!
-        - Use jQuery to add the `hidden` class to the first child div you selected
+        - Use jQuery to add the `hidden` class to the first child div you selected.
       - Remember, that is where you added the card back image as a background image!
       - Once the first child is hidden, the background image of the instructor you added to the second child should be revealed.
 
