@@ -8,27 +8,26 @@ In this feature, a third card will be introduced in order to update the function
 ### Feature Set
 
 1. In your `index.html`, uncomment one more card.
-   - Apply background images to the child divs
-    - Make sure that two of the instructor images match on the second child divs
+   - Apply background images to the child divs.
+    - Make sure that two of the instructor images match on the second child divs.
     - There should be a total of three cards displaying on the page.
 2. In your `script.js`, declare three variables in the global space near the top of the page:
    - `firstCardClicked`
    - `secondCardClicked`
    - `matches`
-   - Set their initial values to `null`
+   - Set their initial values to `null`.
 3. Now when you click on the cards:
    - Store the jQuery reference for the first card you clicked in the `firstCardClicked` variable.
    - And store the jQuery reference for the second card you clicked in the `secondCardClicked` variable.
 4. After storing the second card:
-   - Check if the background image urls  for the instructor images on the second child divs of `firstCardClicked` and `secondCardClicked` match
+   - Check if the background image urls  for the instructor images on the second child divs of `firstCardClicked` and `secondCardClicked` match.
       - To do this:
-        - Use jQuery to select the second child div (where the of each card and then retrieve the CSS data you need from it
-        - For a hint 
-          - Search Google "jquery retrieve css value"
-    - If the urls match
-      - console.log "cards match"
-      - increase the value of the `matches` variable by 1
-
+        - Use jQuery to select the second child div (where the of each card and then retrieve the CSS data you need from it.
+        - For a hint:
+          - Search Google "jquery retrieve css value".
+    - If the urls match:
+      - `console.log` `"cards match"`
+      - Increase the value of the `matches` variable by 1.
     - If both cards **do not match**,
       - Flip the cards back.
 
