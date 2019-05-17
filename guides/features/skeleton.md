@@ -24,6 +24,8 @@ In this feature, you are creating the skeleton of elements that will hold any ad
   - It will be refactored into full responsiveness prior to inclusion in your portfolio, but
     - You do not have the time for a responsive build at this point
     - Focus on learning how to position elements on the page
+      - Create classes on the elements you want to apply CSS to, use those classes for CSS selection
+        - Do not use ids for styling, ids are for JavaScript selection
       - Use borders / background colors to ease the viewing of the elements you want to position on the page
       - Use the styles feature of the Chrome Inspector to make changes in real time
   - And Lastly, CSS is hard! Make sure to ask questions and keep at it!
@@ -37,10 +39,10 @@ In this feature, you are creating the skeleton of elements that will hold any ad
 ![initial-build](../images/basic-template.jpg)
 
 #### Final Design with all assests
-![initial-build](../images/demo-pic-1.jpg)
+![demo-pic-1](../images/demo-pic-1.jpg)
 
 #### With cards flipped to show images
-![initial-build](../images/demo-pic-2.jpg)
+![demo-pic-2](../images/demo-pic-2.jpg)
 
 
 

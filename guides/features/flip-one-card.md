@@ -15,21 +15,38 @@ In this feature:
 
 1. In your `index.html`, add a `<script>` tag with the `src` for the **jQuery** library.
    - https://code.jquery.com/jquery-3.1.0.js
-2. Create a `script.js` file and include this in a separate `<script>` tag in your `index.html` file.
-3. Start by commenting out all the other cards and leave two remaining.
-4. Create a function, `flipCard`, that will be called when clicking on each of the cards on the webpage.
-   - Once clicked, the card's back will be hidden and the front will be revealed.
-5. Modify the `flipCard` function, to only flip the card that you have clicked on.
-   - Hint: You may want to use `event.target` or `event.currentTarget`.
+2. Create a `script.js` file and include this as the `src` in a second `<script>` tag in your `index.html` file.
+    - Make sure that you load jQuery prior to your own JavaScript file
+3. Now we will alter the HTML for this Feature Set.
+    - Begin by commenting out all of your card divs except the first one
+    - On that first card div that you did not comment out
+      - add the card back image to the first child div as a background image
+      - add an instructor image to the second child div as a background image
+4. Now that the HTML is prepared, use jQuery to select your single card
+    - Add a clickhandler to that card
+    - The clickhandler will call a function called `handleCardClick`
+5.  Now, declare the function your click handler will call, `handleCardClick`
+    - This function will take a single parameter
+      - The parameter will be `event`
+      - It will contain the `event` object that is passed forward by your click handler
+      - The `event` object will contain the information you need to target specific cards
+    - Initially, the function only needs to hide the first child div of the card you click on
+      - Remember, that is where you added the card back image as a background image!
+      - Once the first child is hidden, the background image of the instructor you added to the second child should be revealed
+
+6. After you achieve "flipping the card"
+    - uncomment the next card
+    - add the background images as you did for the first card
+    - make sure that clicking on the cards flips only the card you click on
+      - Remember the `event` object?
+      - The data you need is in there!
+
 
 ### Design Docs
 
-<!-- TODO Will have design docs located here
 
-- Bullet
-![Alt-text-for-image](/path/to/image.jpg)
+![gif of card flip](../feature-gifs/flip-one-card.gif)
 
--->
 
 
 ### After Each Feature
