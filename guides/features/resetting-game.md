@@ -27,13 +27,13 @@ In this feature, you will want to create a skeleton of elements with any additio
 - Finally, you will want to create a pull request. This will merge the code from your newly **completed** feature branch into your `master` branch.
 
   1. Navigate to <kbd>New Pull Request</kbd>:
-  ![Navigate to pull requests](../tutorial/images/navigate-to-pull-request.gif)
+  ![Navigate to pull requests](../post-feature/navigate-to-pull-request.gif)
   2. Compare changes to merge: 
-  ![Compare changes to merge](../tutorial/images/compare-changes.gif)
+  ![Compare changes to merge](../post-feature/compare-changes.gif)
   3. Create a new pull request:
-  ![Create new pull request](../tutorial/images/create-pull-request.gif)
+  ![Create new pull request](../post-feature/create-pull-request.gif)
   4. Merge pull request:
-  ![Merge pull request](../tutorial/images/merge-pull-request.gif)
+  ![Merge pull request](../post-feature/merge-pull-request.gif)
   5. Update master with the new changes:
-  ![Update master](../tutorial/images/pull-new-changes.gif)
+  ![Update master](../post-feature/pull-new-changes.gif)
   6. Go back to [Features](../../README.md), if you're still working through the project.

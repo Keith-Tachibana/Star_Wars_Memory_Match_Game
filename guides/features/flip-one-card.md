@@ -3,12 +3,12 @@ Instructions - Flip One Card
 
 ### Overview
 
-In this feature, you will want to create a skeleton of elements with any additional child elements that will make up the project you are creating.
+In this feature, you are adding the functionality that will reveal one card once it is clicked. After, you will then include a second card to reveal the card individually to then be used to match cards. 
 
-- In an `index.html` file, your `<body>` will have three main sections:
-  - `<header>`, will be used for a heading and/or logo.
-  - `<aside>`, will be used to hold data / information regarding game stats.
-  - `<main>`, will be used to hold the cards to play through your Memory Match game.
+- In your `index.html`, add a `<script>` tag with the `src` for the **jQuery** library.
+  - https://code.jquery.com/jquery-3.1.0.js
+- Create a `script.js` file and include this in a separate `<script>` tag in your `index.html` file.
+- 
 
 <!-- TODO Will have design docs located here -->
 
@@ -27,13 +27,13 @@ In this feature, you will want to create a skeleton of elements with any additio
 - Finally, you will want to create a pull request. This will merge the code from your newly **completed** feature branch into your `master` branch.
 
   1. Navigate to <kbd>New Pull Request</kbd>:
-  ![Navigate to pull requests](../tutorial/images/navigate-to-pull-request.gif)
+  ![Navigate to pull requests](../post-feature/navigate-to-pull-request.gif)
   2. Compare changes to merge: 
-  ![Compare changes to merge](../tutorial/images/compare-changes.gif)
+  ![Compare changes to merge](../post-feature/compare-changes.gif)
   3. Create a new pull request:
-  ![Create new pull request](../tutorial/images/create-pull-request.gif)
+  ![Create new pull request](../post-feature/create-pull-request.gif)
   4. Merge pull request:
-  ![Merge pull request](../tutorial/images/merge-pull-request.gif)
+  ![Merge pull request](../post-feature/merge-pull-request.gif)
   5. Update master with the new changes:
-  ![Update master](../tutorial/images/pull-new-changes.gif)
+  ![Update master](../post-feature/pull-new-changes.gif)
   6. Go back to [Features](../../README.md), if you're still working through the project.

@@ -3,12 +3,15 @@ Instructions - Skeleton
 
 ### Overview
 
-In this feature, you are creating the skeleton of elements that will hold any additional elements that will make up the project you are creating. A design doc is provided to illustrate what you will be building toward using HTML and CSS.
+In this feature, you are creating the skeleton of elements that will hold any additional elements that will make up the project you are creating. Design docs are provided to illustrate what you will be building toward using HTML and CSS.
 
 - In an `index.html` file, your `<body>` will have three main sections:
   - `<header>`, will be used for a heading and/or logo.
   - `<aside>`, will be used to hold data / information regarding game stats.
   - `<main>`, will be used to hold the cards to play through your Memory Match game.
+- In a `style.css` file, include the CSS properties to get a rough match of the provided design doc.
+
+### Design Docs
 
 <!-- TODO Will have design docs located here 
 
@@ -32,13 +35,13 @@ In this feature, you are creating the skeleton of elements that will hold any ad
 - Finally, you will want to create a pull request. This will merge the code from your newly **completed** feature branch into your `master` branch.
 
   1. Navigate to <kbd>New Pull Request</kbd>:
-  ![Navigate to pull requests](../tutorial/images/navigate-to-pull-request.gif)
+  ![Navigate to pull requests](../post-feature/navigate-to-pull-request.gif)
   2. Compare changes to merge: 
-  ![Compare changes to merge](../tutorial/images/compare-changes.gif)
+  ![Compare changes to merge](../post-feature/compare-changes.gif)
   3. Create a new pull request:
-  ![Create new pull request](../tutorial/images/create-pull-request.gif)
+  ![Create new pull request](../post-feature/create-pull-request.gif)
   4. Merge pull request:
-  ![Merge pull request](../tutorial/images/merge-pull-request.gif)
+  ![Merge pull request](../post-feature/merge-pull-request.gif)
   5. Update master with the new changes:
-  ![Update master](../tutorial/images/pull-new-changes.gif)
+  ![Update master](../post-feature/pull-new-changes.gif)
   6. Go back to [Features](../../README.md), if you're still working through the project.
