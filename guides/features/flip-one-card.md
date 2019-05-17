@@ -3,7 +3,13 @@ Instructions - Flip One Card
 
 ### Overview
 
-In this feature, you are adding the functionality that will reveal one card once it is clicked. After, you will then include a second card to reveal the card individually to then be used to match cards. 
+In this feature:
+  - You are adding the functionality that will reveal the image on one card once it is clicked.
+
+  - After you have completed this initial functionality:
+    - You must add a second card and confirm that clicking on a card reveals the image on only the card that is clicked
+    - The reason for this test is that most initial attempts to flip the card will flip both cards once a second card is added
+    - This functionality must be properly completed prior to moving on to the next feature set
 
 ### Feature Set
 
@@ -18,7 +24,7 @@ In this feature, you are adding the functionality that will reveal one card once
 
 ### Design Docs
 
-<!-- TODO Will have design docs located here 
+<!-- TODO Will have design docs located here
 
 - Bullet
 ![Alt-text-for-image](/path/to/image.jpg)
@@ -41,7 +47,7 @@ In this feature, you are adding the functionality that will reveal one card once
 
   1. Navigate to <kbd>New Pull Request</kbd>:
   ![Navigate to pull requests](../post-feature/navigate-to-pull-request.gif)
-  2. Compare changes to merge: 
+  2. Compare changes to merge:
   ![Compare changes to merge](../post-feature/compare-changes.gif)
   3. Create a new pull request:
   ![Create new pull request](../post-feature/create-pull-request.gif)
