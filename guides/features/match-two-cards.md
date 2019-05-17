@@ -3,15 +3,23 @@ Instructions - Match Two Cards
 
 ### Overview
 
-In this feature, you will want to create a skeleton of elements with any additional child elements that will make up the project you are creating.
+In this feature, you will currently have two cards that will be displaying and providing the functionality to properly match the two cards.
 
-- In an `index.html` file, your `<body>` will have three main sections:
-  - `<header>`, will be used for a heading and/or logo.
-  - `<aside>`, will be used to hold data / information regarding game stats.
-  - `<main>`, will be used to hold the cards to play through your Memory Match game.
+### Feature Set
 
+1. In your `script.js`, create three variables:
+   - `firstCard`
+   - `secondCard`
+   - `matches`
+2. During each click of the cards:
+   - If you've clicked on the first card, you will want to store that card in the `firstCard` variable.
+   - If you've clicked on the second card, you will want to store that card in the `secondCard` variable.
+3. After storing the second card:
+   - If both cards **match**, increase the `matches` variable by one.
+   - If both cards **do not match**, flip both cards back and reveal their card backs.
+
+### Design Docs
 <!-- TODO Will have design docs located here -->
-
 
 ### After each challenge
 
