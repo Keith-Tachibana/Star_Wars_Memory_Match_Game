@@ -3,34 +3,36 @@ Instructions - Tracking Stats
 
 ### Overview
 
-In this feature, you will now begin working with all the cards to introduce stats such as: `attempts`, `matches`, `accuracy`, and `games_played`. Additionally, you will be accurately displaying them as the user plays through the game.
+In this feature, you will now begin working with all the cards to introduce stats such as: `matches`, `accuracy`, and `games_played`. Additionally, you will be accurately displaying them as the user plays the game.
 
 ### Feature Set
 
-1. In your `index.html`, uncomment all the cards. You should now have a total of 18 cards displaying on the page.
-2. In your `script.js`, begin by introducing the following variables:
+1. In your `index.html`, uncomment all the cards. You should now have a total of 18 cards displayed on the page.
+    - Make sure that you add the needed background images and to all of the child divs as you did in the previous feature sets
+    - Also, make sure that you have two of each instructor!
+2. In your `script.js`, begin by introducing the following variables into the same global space as the previous variables you declared:
    - `attempts`
-   - `accuracy`
    - `games_played`
-3. Modify your existing `flipCard` function. 
-   - Determine during the execution of code when this function gets called:
-     - When an `attempt` is made, increase the count of this variable by `1`.
-     - When the game is complete, increase the count of the `games_played` variable by `1`.
-4. Create a function, `displayStats`.
-   - This function will select the appropriate child elements inside of the `<aside>` and change the text with the values inside of the our stats variables:
-     - `matches`
-     - `attempts`
-     - `accuracy`
-     - `games_played`
+3. Modify your existing `handleCardClick` function.
+    - `attempts` should be incremented by `1` every time the player attempts to match 2 cards
+    - When the player wins the game, increment the value of the `games_played` variable by `1`
+4. Declare a function `calculateAccuracy`
+    - This function will be used to calculate the players accuracy using the global `attempts` and `matches` variables you declared earlier
+    - This function will be called from the next function you create, `displayStats`
+5. Now, declare a function, `displayStats`.
+    - This function will select the appropriate child elements inside of the `<aside>` and change the text to reflect the values inside of the our stats variables:
+      - `attempts`
+      - `accuracy`
+      - `games_played`
+    - To correctly update `accuracy`
+      - Declare a variable in the `displayStats` function and store the result of calling `calculateAverage` function you created in the previous step
+      - Use the value returned from the `calculateAverage` function to update the text in the proper `aside` child element
 
 ### Design Docs
 
-<!-- TODO Will have design docs located here 
+#### Stats Tracking
+![tracking stats](../feature-gifs/stats-tracking.gif)
 
-- Bullet
-![Alt-text-for-image](/path/to/image.jpg)
-
--->
 
 
 ### After Each Feature
@@ -48,7 +50,7 @@ In this feature, you will now begin working with all the cards to introduce stat
 
   1. Navigate to <kbd>New Pull Request</kbd>:
   ![Navigate to pull requests](../post-feature/navigate-to-pull-request.gif)
-  2. Compare changes to merge: 
+  2. Compare changes to merge:
   ![Compare changes to merge](../post-feature/compare-changes.gif)
   3. Create a new pull request:
   ![Create new pull request](../post-feature/create-pull-request.gif)
