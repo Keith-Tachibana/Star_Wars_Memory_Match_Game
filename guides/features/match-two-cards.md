@@ -29,7 +29,7 @@ In this feature, a third card will be introduced in order to update the function
       - `console.log` `"cards match"`
       - Increase the value of the `matches` variable by 1.
     - If both cards **do not match**,
-      - Flip the cards back.
+      - Flip the cards back to their original state after 1.5 seconds.
         - Do this by removing the `hidden` class you added to the first child div of `firstCardClicked` and `secondCardClicked` to hide them
 
 ### Design Docs
