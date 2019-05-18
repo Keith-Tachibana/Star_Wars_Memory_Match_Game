@@ -20,7 +20,7 @@ In this feature:
 3. Alter the HTML for this Feature Set.
     - Begin by commenting out all of your card divs except the first one.
     - On that first card div that you did not comment out.
-      - Add the card back image to the first child div as a background image.
+      - Add the "lfz-card" image to the first child div as a background image.
       - Add an instructor image to the second child div as a background image.
 4. Now that the HTML is prepared, use jQuery to select your single card.
     - Add a click handler to that card.
@@ -35,9 +35,8 @@ In this feature:
         - Create a CSS class selector called `.hidden`.
         - In the selector, add `display: none`.
         - Use jQuery to select the first child div of the card you clicked on.
-         - Remember, that is where you added the card back image as a background image!
+        - Remember, that is where you added the "lfz-card" image as a background image!
         - Use jQuery to add the `hidden` class to the first child div you selected.
-      - Remember, that is where you added the card back image as a background image!
       - Once the first child is hidden, the background image of the instructor you added to the second child should be revealed.
 
 6. After you achieve "flipping the card":
