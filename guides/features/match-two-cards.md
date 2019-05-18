@@ -23,7 +23,7 @@ In this feature, a third card will be introduced in order to update the function
    - Check if the background image urls  for the instructor images on the second child divs of `firstCardClicked` and `secondCardClicked` match
       - To do this:
         - Use jQuery to select the second child div (where the of each card and then retrieve the CSS data you need from it
-        - For a hint 
+        - For a hint
           - Search Google "jquery retrieve css value"
     - If the urls match
       - console.log "cards match"
@@ -31,6 +31,7 @@ In this feature, a third card will be introduced in order to update the function
 
     - If both cards **do not match**,
       - Flip the cards back.
+        - Do this by removing the `hidden` class you added to the first child div of `firstCardClicked` and `secondCardClicked` to hide them
 
 ### Design Docs
 

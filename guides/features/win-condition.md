@@ -13,21 +13,22 @@ In this feature, a fourth card will be used to complete the base functionality o
 ### Feature Set
 
 1. In your `index.html`, uncomment another card.
-   - There should now be a total of four cards displaying on the page.
-2. In your `script.js`, introduce another variable:
-   - `total_matches`
-3. After each successful match of the two cards you have clicked, check your `matches` variable with the `total_matches` variable.
-   - If true, display the modal to verify that there is a "win". This will now complete the game.
-   - If false, nothing happens, the user will continue playing the game.
+    - Add the proper background images to the child divs
+    - There should now be a total of four cards displayed on the page.
+2. In your `script.js`, declare another variable in the same global space as the previous variables:
+    - `max_matches`
+    - Set the of the `max_matches` value to the number 2
+3. After each successful match of the two cards you have clicked:
+    - check if your `matches` variable is equal to the `max_matches` variable
+      - If true, display the modal to verify that there is a "win". This will now complete the game.
+    - If false, nothing happens, the user will continue playing the game.
 
 ### Design Docs
 
-<!-- TODO Will have design docs located here 
+#### Win Condition with Modal
+![win condition](../feature-gifs/win-condition.gif)
 
-- Bullet
-![Alt-text-for-image](/path/to/image.jpg)
 
--->
 
 
 ### After Each Feature
@@ -45,7 +46,7 @@ In this feature, a fourth card will be used to complete the base functionality o
 
   1. Navigate to <kbd>New Pull Request</kbd>:
   ![Navigate to pull requests](../post-feature/navigate-to-pull-request.gif)
-  2. Compare changes to merge: 
+  2. Compare changes to merge:
   ![Compare changes to merge](../post-feature/compare-changes.gif)
   3. Create a new pull request:
   ![Create new pull request](../post-feature/create-pull-request.gif)
