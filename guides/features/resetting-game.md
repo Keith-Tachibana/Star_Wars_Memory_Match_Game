@@ -3,22 +3,24 @@ Instructions - Resetting Game
 
 ### Overview
 
-In this feature, you will want to create a skeleton of elements with any additional child elements that will make up the project you are creating.
+In this feature, you are resetting the stats that have currently been tracked back to the state when you first started the game. This is necessary in the event you complete the game or need to reset the game before the completion of the game.
 
-- In an `index.html` file, your `<body>` will have three main sections:
-  - `<header>`, will be used for a heading and/or logo.
-  - `<aside>`, will be used to hold data / information regarding game stats.
-  - `<main>`, will be used to hold the cards to play through your Memory Match game.
+### Feature Set
+
+1. In your `script.js` file, declare a function, `resetStats`.
+2. Reassign all the variables used to track stats back to `0`.
+   - `accuracy`
+   - `matches`
+   - `attempts`
+3. Resetting the game counts as a completing the game.
+   - Increase the `games_played` variable, by `1`.
+4. Use your previously created function, `displayStats`, to re-display the recently modified stat variables.
+5. Additionally, select all the cards that are on the page and flip them back to have the card backs revealing.
+   - You will want to remove the `hidden` class on all cards to set them back to their original states before the game has been played.
 
 ### Design Docs
 
-<!-- TODO Will have design docs located here 
-
-- Bullet
-![Alt-text-for-image](/path/to/image.jpg)
-
--->
-
+![Resetting Game](../feature-gifs/reset-game.gif)
 
 ### After Each Feature
 

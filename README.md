@@ -85,7 +85,6 @@ You are now ready to start on the first feature!
 - HTML Skeleton - [Instructions](guides/features/skeleton.md)
 - Flip One Card - [Instructions](guides/features/flip-one-card.md)
 - Match Two Cards - [Instructions](guides/features/match-two-cards.md)
-- Flip Cards Back - [Instructions](guides/features/flip-cards-back.md)
 - Win Condition - [Instructions](guides/features/win-condtion.md)
 - Tracking Stats - [Instructions](guides/features/tracking-stats.md)
 - Resetting Game - [Instructions](guides/features/resetting-game.md)
