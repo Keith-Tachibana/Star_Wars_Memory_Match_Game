@@ -3,22 +3,29 @@ Instructions - Resetting Game
 
 ### Overview
 
-In this feature, you are resetting the stats that have currently been tracked back to the state when you first started the game. This is necessary in the event you complete the game or need to reset the game before the completion of the game.
+In this feature, you are resetting the game.
+  - To do this you must:
+    - Reset the stats to their original values
+      - Except for `games played`, that must be incremented everytime the game is reset
+    - Return the cards to their original state
+      - This means all instructor cards are hidden and the `lfz-card` images are shown
 
 ### Feature Set
 
 1. In your `script.js` file, declare a function, `resetStats`.
-2. Reassign all the variables used to track stats back to `0`.
-   - `accuracy`
+2. The function should reassign all the variables used to track stats back to `null`.
    - `matches`
    - `attempts`
-3. Resetting the game counts as a completing the game.
-   - Increase the `games_played` variable, by `1`.
-4. Use your previously created function, `displayStats`, to re-display the recently modified stat variables.
-5. Additionally, select all the cards that are on the page and flip them back to have the card backs revealing.
-   - You will want to remove the `hidden` class on all cards to set them back to their original states before the game has been played.
+3. Resetting the game counts as completing the game.
+   - Increment the `games_played` variable, by `1`.
+4. Use your previously created function, `displayStats`, to update the DOM for the recently modified stat variables.
+5. Additionally, select all the cards that are on the page and flip them back.
+    - The `lfz-card` images should be showing.
+    - You will want to remove the `hidden` class on all cards to set them back to their original states before the game has been played.
 
 ### Design Docs
+
+#### Game Reset
 
 ![Resetting Game](../feature-gifs/reset-game.gif)
 
@@ -37,7 +44,7 @@ In this feature, you are resetting the stats that have currently been tracked ba
 
   1. Navigate to <kbd>New Pull Request</kbd>:
   ![Navigate to pull requests](../post-feature/navigate-to-pull-request.gif)
-  2. Compare changes to merge: 
+  2. Compare changes to merge:
   ![Compare changes to merge](../post-feature/compare-changes.gif)
   3. Create a new pull request:
   ![Create new pull request](../post-feature/create-pull-request.gif)

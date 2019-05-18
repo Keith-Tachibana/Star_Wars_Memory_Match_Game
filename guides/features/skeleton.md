@@ -17,7 +17,7 @@ In this feature, you are creating the skeleton of elements that will hold any ad
       - A "container" div which will contain all of the cards.
       - Inside of that container, you will include a div for each of the 18 cards.
       - You will then nest two child divs in each of the card divs.
-        - The first child will hold the "card back" background-image.
+        - The first child will hold the "lfz-card" background-image.
         - The second child will hold the background images you are trying to match.
 - In a `style.css` file, include the CSS properties to get a rough match of the provided design doc.
   - Keep in mind that the initial build will be for a static page.
