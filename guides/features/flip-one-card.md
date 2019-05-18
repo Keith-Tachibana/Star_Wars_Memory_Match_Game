@@ -15,7 +15,7 @@ In this feature:
 
 1. In your `index.html`, add a `<script>` tag with the `src` for the **jQuery** library.
    - https://code.jquery.com/jquery-3.1.0.js
-2. Create a `script.js` file and include this as the `src` in a second `<script>` tag in your `index.html` file.
+2. In a `script.js` file and include this as the `src` in a second `<script>` tag in your `index.html` file.
     - Make sure that you load jQuery prior to your own JavaScript file
 3. Alter the HTML for this Feature Set.
     - Begin by commenting out all of your card divs except the first one.
