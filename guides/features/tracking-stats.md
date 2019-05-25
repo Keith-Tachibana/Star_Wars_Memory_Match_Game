@@ -25,8 +25,8 @@ In this feature, you will now begin working with all the cards to introduce stat
       - `accuracy`
       - `games_played`
     - To correctly update `accuracy`
-      - Declare a variable in the `displayStats` function and store the result of calling `calculateAverage` function you created in the previous step
-      - Use the value returned from the `calculateAverage` function to update the text in the proper `aside` child element
+      - Declare a variable in the `displayStats` function and store the result of calling `calculateAccuracy` function you created in the previous step
+      - Use the value returned from the `calculateAccuracy` function to update the text in the proper `aside` child element
 
 ### Design Docs
 
