@@ -14,12 +14,12 @@ In this feature, you will now begin working with all the cards to introduce stat
    - `attempts`
    - `games_played`
 3. Modify your existing `handleCardClick` function.
-    - `attempts` should be incremented by `1` every time the player attempts to match 2 cards
+    - `attempts` should be incremented by `1` every time the player ***attempts*** to match 2 cards
     - When the player wins the game, increment the value of the `games_played` variable by `1`
-4. Declare a function `calculateAccuracy`
+4. Declare a new function in the global space `calculateAccuracy`
     - This function will be used to calculate the players accuracy using the global `attempts` and `matches` variables you declared earlier
     - This function will be called from the next function you create, `displayStats`
-5. Now, declare a function, `displayStats`.
+5. Now, declare another new function in the global space, `displayStats`.
     - This function will select the appropriate child elements inside of the `<aside>` and change the text to reflect the values inside of the our stats variables:
       - `attempts`
       - `accuracy`

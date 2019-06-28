@@ -12,7 +12,7 @@ In this feature, you are resetting the game.
 
 ### Feature Set
 
-1. In your `script.js` file, declare a function, `resetStats`.
+1. In your `script.js` file, declare a new function in the global space, `resetStats`.
 2. The function should reassign all the variables used to track stats back to `null`.
    - `matches`
    - `attempts`
@@ -21,7 +21,7 @@ In this feature, you are resetting the game.
 4. Use your previously created function, `displayStats`, to update the DOM for the recently modified stat variables.
 5. Additionally, select all the cards that are on the page and flip them back.
     - The `lfz-card` images should be showing.
-    - You will want to remove the `hidden` class on all cards to set them back to their original states before the game has been played.
+    - You will want to remove the `hidden` class on all cards to set them back to their original states before the game was played.
 
 ### Design Docs
 

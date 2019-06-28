@@ -37,6 +37,8 @@ In this feature, a third card will be introduced in order to update the function
     - If the urls match:
       - `console.log` `"cards match"`
       - Increase the value of the `matches` variable by 1.
+      - The instructor images should remain uncovered
+        - You will notice they disappear in the example gif below. This is not required, but if completed later, it reveals the entire background image nicely!
     - If both cards **do not match**,
       - Flip the cards back to their original state after 1.5 seconds.
         - Do this by removing the `hidden` class you added to the first child div of `firstCardClicked` and `secondCardClicked` to hide them

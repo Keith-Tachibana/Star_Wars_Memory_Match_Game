@@ -13,8 +13,8 @@ In this feature:
 
 ### Feature Set
 
-1. In your `index.html`, add a `<script>` tag with the `src` for the **jQuery** library.
-   - https://code.jquery.com/jquery-3.1.0.js
+1. In the head of your `index.html`, add the jQuery CDN below
+   - `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>`
 2. Then add a second `<script>` tag in your `index.html` file **BENEATH** the script tag for jQuery, and set its src to the included `script.js` file.
     - This is to ensure that you load jQuery prior to your own JavaScript file
 3. Alter the HTML for this Feature Set.
@@ -44,7 +44,7 @@ In this feature:
 
     - This click handler will take a callback function called `handleCardClick`.
       - This callback will be called when the click event occurs
-5. Next, declare a function, `handleCardClick`
+5. Next, declare a new function in the global space, `handleCardClick`
     - This function will take a single parameter:
       - The parameter will be named `event`
       - It will contain the `event` object that is passed forward by your click handler.

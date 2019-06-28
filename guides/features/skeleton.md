@@ -40,10 +40,10 @@ In this feature, you are creating the skeleton of elements that will hold any ad
 ![initial-build](../images/basic-template.jpg)
 
 #### Final Design with all assests
-![demo-pic-1](../images/demo-pic-1.jpg)
+![demo-pic-1](../images/demo-pic-1.png)
 
 #### With cards flipped to show images
-![demo-pic-2](../images/demo-pic-2.jpg)
+![demo-pic-2](../images/demo-pic-2.png)
 
 
 
