@@ -19,6 +19,7 @@ In this feature, you are creating the skeleton of elements that will hold any ad
       - You will then nest two child divs in each of the card divs.
         - The first child will hold the "lfz-card" background-image.
         - The second child will hold the background images you are trying to match.
+          - Documentation on background images: https://www.w3schools.com/cssref/pr_background-image.asp
 - In a `style.css` file, include the CSS properties to get a rough match of the provided design doc.
   - Keep in mind that the initial build will be for a static page.
   - It will be refactored into full responsiveness prior to inclusion in your portfolio, but:
