@@ -18,14 +18,18 @@ In this feature, a third card will be introduced in order to update the function
    - `matches`
    - Set their initial values to `null`.
 3. Now when you click on the cards:
-   - Store the jQuery reference for the first card you clicked in the `firstCardClicked` variable.
-    - **Example:** `firstCardClicked = $(event.currentTarget)`
-      - You are storing this reference in a variable to prevent jQuery from having to search the DOM every time you want to use the element reference
-   - And store the jQuery reference for the second card you clicked in the `secondCardClicked` variable.
-4. After storing the second card:
-   - Check if the background image urls  for the instructor images on the second child divs of `firstCardClicked` and `secondCardClicked` match.
+   - if `firstCardClicked` is still containing a `null` value:
+      - Store the jQuery reference for the first card you clicked in the `firstCardClicked` variable.
+     - **Example:** `firstCardClicked = $(event.currentTarget)`
+        - You are storing this reference in a variable to prevent jQuery from having to search the DOM every time you want to use the element reference
+   - If `firstCardClicked` has already been assigned a jQuery element reference:
+     - then store the jQuery reference for the card you clicked in the `secondCardClicked` variable.
+
+4. After clicking two cards and storing the jQuery reference into the `secondCardClicked` variable:
+   - Check if the background image urls for the instructor images on the second child divs of `firstCardClicked` and `secondCardClicked` match.
       - To do this:
-        - Use jQuery to select the second child div of each card and then retrieve the CSS data you need from it.
+        - Use jQuery to select the second child div of the element references you saved in `firstCardClicked` and `secondCardClicked`
+        - Then retrieve the background image urls from those child elements and compare them.
           - This is a great opportunity to use the jQuery `.find()` method noted earlier
             - Documentation: https://www.w3schools.com/jquery/traversing_find.asp
           - It is also very helpful to use the jQuery `.css()` method to get the background image urls
