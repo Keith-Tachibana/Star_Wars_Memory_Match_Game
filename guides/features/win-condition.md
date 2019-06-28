@@ -6,8 +6,8 @@ Instructions - Win Condition
 In this feature, a fourth card will be used to complete the base functionality of this project to "win" the game. We will be accomplishing this by matching two pairs of cards and displaying a modal.
 
 <details>
-   <summary>What is a modal?</summary>
-      A <a href="https://www.w3schools.com/howto/howto_css_modals.asp" target="_blank">modal</a> is a dialog bopopup window that is displayed on top of the current page.
+   <summary>What is a modal?</summary> It is good to think of a modal as simply an element that is hidden and then shown to display information to the user, or to allow them to interact with the page for a specific purpose. (A good example of a modal is a pop up on any number of websites that asks you to register for an account). For the purposes of this project, create a div with text that informs the user they have won, and provide them with a button (or a div that is shaped like a button because they are easy to style) which they can click to restart the game and play again. It is also recommended that you hide and show the modal using the same .hidden class that you are using to hide the back of the cards when they are clicked. HINT the jQuery .addClass() and .removeClass() are very helpful for this.
+
 </details>
 
 ### Feature Set
