@@ -1,5 +1,7 @@
 # Memory Match
 
+> - Maintained by: `codingcodymiller`
+
 ## What are the specifications for the app?
 <details>
 <summary> &#8592; Click arrow for details</summary>
