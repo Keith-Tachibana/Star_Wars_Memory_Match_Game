@@ -31,7 +31,7 @@ In this feature, you are resetting the game.
 
 ### After The Final Feature
 
-- When your Memory Match is complete, you will want to save and submit your work to the branch that you have created.
+- When your Memory Match is complete, you will want to save and submit your work to the branch that you have created, and then open a pull request on the Learning Fuze Memory Match repository for review (***Instructions for submission are below!!!***).
   - Use `git status` to check that you are on the correct branch that represents your feature.
   - You will want to **add**, **commit**, and **push** the code that you have written to the appropriate Github repository.
     1. `git add .`
@@ -60,4 +60,4 @@ In this feature, you are resetting the game.
 - Once you have merged your final version of the Memory Match game onto your master branch, you will be turning it in for Review from the senior class.
   - On Github, and from your Memory Match Repository:
     - Create a new pull request
-    - Make that pull request from your "master" branch to the "student-review" branch on the Learning Fuze Memory Match Repository.
+    - Make that pull request from your "master" branch to the "student-reviews" branch on the Learning Fuze Memory Match Repository.
