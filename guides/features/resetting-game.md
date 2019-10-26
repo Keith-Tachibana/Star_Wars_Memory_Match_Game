@@ -6,9 +6,9 @@ Instructions - Resetting Game
 In this feature, you are resetting the game.
   - To do this you must:
     - Reset the stats to their original values
-      - Except for `games played`, that must be incremented everytime the game is reset
+      - Except for `games played`, that must be incremented every time the game is reset
     - Return the cards to their original state
-      - This means all instructor cards are hidden and the `lfz-card` images are shown
+      - This means all logo cards are hidden and the `lfz-card` images are shown
 
 ### Feature Set
 

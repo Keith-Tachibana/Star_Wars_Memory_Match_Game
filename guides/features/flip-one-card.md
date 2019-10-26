@@ -21,14 +21,14 @@ In this feature:
     - Begin by commenting out all of your card divs except the first one.
     - On that first card div that you did not comment out:
       - Add the "lfz-card" image to the first child div as a background image.
-      - Add an instructor image to the second child div as a background image.
-        - It is recommended that you add the instructor and card images as background images by using individual classes which contain the url for the card or individual instructors.
+      - Add a technology logo to the second child div as a background image.
+        - It is recommended that you add the logo images and card images as background images by using individual classes which contain the url for the card or individual instructors.
           - **For Example:**
             - ![Example CSS Selector](../feature-gifs/dan-css-selector.png)
-            - This way, you can have the CSS for the child div that you want to place the background image on separate from the image itself, and just add the class for the individual instructor you want.
+            - This way, you can have the CSS for the child div that you want to place the background image on separate from the image itself, and just add the class for the individual logo you want.
             - **For Example**
               - The grouped selector and CSS you use for the card fronts and backs could be: ![Example CSS Selector](../feature-gifs/example-card-selector.png)
-              - This would properly size all of the cards, give them the properties you need for the background images to show, and allow you to change the images by just adding or changing the instructor class!
+              - This would properly size all of the cards, give them the properties you need for the background images to show, and allow you to change the images by just adding or changing the logo class!
                 - **NOTE** your classes may differ in name, this is only an example of one way to do it.
 4. Now that the HTML is prepared, use jQuery to select your single card.
     - First use the jQuery `$(document).ready()` function to call an `initializeApp` function
@@ -51,20 +51,20 @@ In this feature:
         - The `event` object will contain the information you need to target specific cards.
           - It is recommended that you console log out the `event` object and look for the `currentTarget` property.
             - When using click events, the jQuery event object will store the reference to the clicked element in the `currentTarget` property
-    - Initially, this function only needs to hide the first child div of the card you have clicked on.
+    - Initially, this function only needs to hide the child div of the card you have clicked on which contains the lfz-card background image.
       - To hide the card, we are going to use a CSS class that is either added or removed:
         - Create a CSS class selector in your CSS file called `.hidden`.
           - This selector must be placed at the bottom of the CSS document to ensure it will always apply!
         - In the selector, add `display: none;`
-        - Use jQuery to select the first child div of the card you clicked on.
+        - Use jQuery to select the proper child div of the card you clicked on.
           - Remember, that is where you added the "lfz-card" image as a background image!
           - Also remember that you can target the element that was clicked on by using `$(event.currentTarget)`
-          - You will need to add to this selector to get the first child
+          - You will need to add more to this selector to get the correct child
             - Documentation: https://www.w3schools.com/jquery/jquery_selectors.asp
             - Documentation: https://www.w3schools.com/jquery/traversing_find.asp
         - Once you have properly selected the element you want to hide:
             - Use jQuery to add the `hidden` class to the element you selected
-      - Once the first child is hidden, the background image of the instructor you added to the second child should be revealed.
+      - Once the lfz-card is hidden, the background image of the logo you added to the second child should be revealed.
 
 6. After you achieve "flipping the card":
     - Uncomment the next card.
