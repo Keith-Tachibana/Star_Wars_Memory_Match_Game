@@ -9,7 +9,7 @@ In this feature, you will now begin working with all the cards to introduce stat
 
 1. In your `index.html`, uncomment all the cards. You should now have a total of 18 cards displayed on the page.
     - Make sure that you add the needed background images and to all of the child divs as you did in the previous feature sets
-    - Also, make sure that you have two of each instructor!
+    - Also, make sure that you have two of each logo!
 2. In your `script.js`, begin by introducing the following variables into the same global space as the previous variables you declared:
    - `attempts`
    - `games_played`

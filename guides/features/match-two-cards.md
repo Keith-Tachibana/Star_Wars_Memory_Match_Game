@@ -7,11 +7,11 @@ In this feature, a third card will be introduced in order to update the function
 
 ### Feature Set
 
-1. In your `index.html`, uncomment one more card.
+1. In your `index.html`, uncomment another card.
    - Apply background images to the child divs.
-    - Make sure that two of the instructor images match on the second child divs of the cards which are uncommented.
+    - Make sure that two of the logo images match on the proper child divs of the cards which are uncommented.
     - There should be a total of three cards displaying on the page.
-      - Two that contain matching instructor images, and one with another instructor
+      - Two that contain matching logo images, and one with another logo
 2. In your `script.js`, declare three variables in the global space near the top of the page:
    - `firstCardClicked`
    - `secondCardClicked`
@@ -26,9 +26,9 @@ In this feature, a third card will be introduced in order to update the function
      - then store the jQuery reference for the card you clicked in the `secondCardClicked` variable.
 
 4. After clicking two cards and storing the jQuery reference into the `secondCardClicked` variable:
-   - Check if the background image urls for the instructor images on the second child divs of `firstCardClicked` and `secondCardClicked` match.
+   - Check if the background image urls for the logo images on the second child divs of `firstCardClicked` and `secondCardClicked` match.
       - To do this:
-        - Use jQuery to select the second child div of the element references you saved in `firstCardClicked` and `secondCardClicked`
+        - Use jQuery to select the proper child div of the element references you saved in `firstCardClicked` and `secondCardClicked` which contain the logo background images.
         - Then retrieve the background image urls from those child elements and compare them.
           - This is a great opportunity to use the jQuery `.find()` method noted earlier
             - Documentation: https://www.w3schools.com/jquery/traversing_find.asp
@@ -37,7 +37,7 @@ In this feature, a third card will be introduced in order to update the function
     - If the urls match:
       - `console.log` `"cards match"`
       - Increase the value of the `matches` variable by 1.
-      - The instructor images should remain uncovered
+      - The logo images should remain uncovered
         - You will notice they disappear in the example gif below. This is not required, but if completed later, it reveals the entire background image nicely!
     - If both cards **do not match**,
       - Flip the cards back to their original state after 1.5 seconds.
