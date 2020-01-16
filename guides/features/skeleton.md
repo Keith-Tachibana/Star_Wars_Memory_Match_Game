@@ -3,23 +3,34 @@ Instructions - Skeleton
 
 ### Overview
 
-In this feature, you are creating the skeleton of elements that will hold any additional elements that will make up the project you are creating. Design docs are provided to illustrate what you will be building toward using HTML and CSS.
+In this feature, you are going to use HTML and CSS to create and initially style the skeleton of your Memory Match application.
 
-- In an `index.html` file, your `<body>` will have three main sections:
-  - `<header>`, will be used for a heading and/or logo.
-    - It will contain a single text element to hold the title.
-  - `<aside>`, will be used to hold data / information regarding game stats.
-    - You will use a single text element for the "stats" title.
-    - You will use six divs for the stats content as shown in the design doc.
-    - Each div will contain a single text element to hold the text content.
-  - `<main>`, will be used to hold the cards to play through your Memory Match game.
-    - You will create the following structure:
-      - A "container" div which will contain all of the cards.
-      - Inside of that container, you will include a div for each of the 18 cards.
-      - You will then nest two child divs in each of the card divs.
-        - The first child div will hold the "lfz-card" background-image.
-        - The second child div will hold the background images you are trying to match.
-          - Documentation on background images: https://www.w3schools.com/cssref/pr_background-image.asp
+Here is an example of the initial skeleton
+
+#### Initial Build
+![initial-build](../images/basic-template.jpg)
+
+## Notice that the page is divided into 3 sections:
+  - A `<header>` element, which will be used for a heading and/or logo.
+  - An `<aside>` element, which will be used to hold data / information regarding game stats.
+  - a `<main>` element, which will be used to hold the cards to play through your Memory Match game.
+
+## Things to consider about the skeletal structure
+  - It is recommended to use a simple `grid` structure for the overall layout.
+    - Start with a `container` element which will hold the 3 primary elements
+    - Now consider how two rows could be used for the layout:
+      - One row for the `header`
+      - One row for the `aside` and the `main`
+    - Now think about `columns`
+      - The `header` appears to use all available columns.
+      - The `aside` appears to use about 1 / 5 of the total width.
+      - The `main` appears to use the remaining 4 / 5s of the total width.
+      - So perhaps using 5 total columns would be useful...?
+  - Once you have completed planning the grid layout, let's look at the child elements contained within the 3 primary elements:
+  
+
+
+
 - In a `style.css` file, include the CSS properties to get a rough match of the provided design doc.
   - Keep in mind that the initial build will be for a static page.
   - It will be refactored into full responsiveness prior to inclusion in your portfolio, but:
@@ -35,16 +46,13 @@ In this feature, you are creating the skeleton of elements that will hold any ad
 
 ### Design Docs
 
-
-
-#### Initial Build
-![initial-build](../images/basic-template.jpg)
-
 #### Final Design with all assests
 ![demo-pic-1](../images/demo-pic-1.png)
 
 #### With cards flipped to show images
 ![demo-pic-2](../images/demo-pic-2.png)
+
+
 
 
 
