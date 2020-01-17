@@ -14,7 +14,7 @@ Let's look at a list of steps which much be accomplished for the Feature.
 5. Implement the correct CSS to style the skeleton based on the Design Doc
 
 
-Here is an example of the initial skeleton
+Here is an example of the initial skeleton:
 
 #### Initial Build
 ![initial-build](../images/basic-template.png)
@@ -43,7 +43,7 @@ Now that you the basic layout of what you have to build, let's take a look at th
       - The reason for this slight reduction in column size is that Bootstrap and other grid libraries use a lot of additional CSS for Margin, Padding, and few other things to allow their system to use a truly 100% wide - 12 column setup.
       - But for the purposes of this application, a slight reduction in column size will have a negligible affect, and will vastly simplify the creation of the grid system you are using.
   - Now that we have decided on a 12 column grid system with 8% wide columns, let's construct the CSS classes for the grid!
-    - Create a new grid.css file as a sibling to the current style.css file.
+    - Create a new grid.css file as a sibling to the current style.css file. In that file, create the following classes:
       - Create a class named `container` with the following CSS:
         - width: 100%
         - max-width: 1500px
@@ -104,41 +104,51 @@ Now that you the basic layout of what you have to build, let's take a look at th
   - Now it is time to build the initial HTML structure for the Memory Match game:
     - Using the list of required elements from steps 2 and 3, create your HTML skeleton in the `index.html` file.
       - Remember that some elements you may initially choose could be replaced, but the most important thing is to create a skeleton based on the available information!
-    - Once you have completed the initial skeleton build, move on to the next step!
+    - Don't forget your grid elements!
+      - You must properly use elements for your `container` and `rows`
+      - Example, the `header` element must be contained within a `row` element because the `header` fills one of the 2 rows:
+        ``` HTML
+        <div class="row">
+          <header></header>
+        </div>
+        ```
+      - This documentation on Bootstrap 4 will be useful for seeing examples of HTML structures for Grid systems. [**Click Here**](https://getbootstrap.com/docs/4.0/layout/grid/)
+    - After you have completed your initial HTML, move on to the next step!
 
   ## 5. Implement the correct CSS to style the HTML skeleton based on the Design Doc
 
   - With the initial HTML skeleton completed, it is now time to start adding CSS.
-  - There is a list of things to consider
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Design Docs
-
-#### Initial CSS build with background images
+  - There is a list of things to consider while applying CSS:
+    - It is recommended to use Flexbox for the arrangement of the divs in the `aside` and the `main` elements.
+      - Remember that `display:flex` must be applied to the parent element of the elements you want to use flex on.
+      - This documentation on `Flexbox` should be very helpful with arranging the child elements of the `aside` and `main` elements: [**Click Here**](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+    - The following is true regarding the use of grid layout for the Memory Match example
+      - The `aside` element is 2 columns wide
+      - The `main` element is 10 columns wide
+      - The individual `card` elements are 2 columns wide.
+      - Once again, this documentation on Bootstrap 4 will be useful for seeing examples of HTML structures for Grid systems. [**Click Here**](https://getbootstrap.com/docs/4.0/layout/grid/)
+    - Lastly, a couple notes on setting height to elements:
+      - First, it is not typical when building normal websites to set height on elements, as height should usually be dictated by the contents of an element...
+      - However, when building a layout such as the Memory Match game, setting heights is fairly common because of the necessity to maintain specific sizing and aspect ratios for the elements regardless of content size.
+      - With that in mind, you can either use fixed sizes for the height (such as pixels), or you can use percentages.
+        - Percentages do have specific challenges though, as you cannot use percentage height on an element which does not have a set height itself.
+        - The following article has come really good information on setting percentage heights for elements [**Click Here**](https://www.lifewire.com/set-height-html-element-100-percent-3467075)
+        - Note: the following is true regarding the example Memory match build:
+          - The body is set to 97vh to give child elements of the body a set height from which to take a percentage.
+          - The grid `container` element has a set height of 100% to make it the same height as the body.
+          - The two `row` elements have percentage heights set on them for their own height and so that their direct children can set percentage heights
+          - The `aside` and `main` elements have percentage height set for their own height and to allow their children to take a percentage of height from them.
+          - The children of the `aside` and `main` child elements also have percentage heights taken from their parents.
+          - To sum up, the `body` has a set height, and each level of elements nested within have percentage height based on their parents from the `container` to the child divs of the `aside` and `main` elements.
+          - This will make sense with practice. Just remember, you cannot set the height of an element to a percentage, unless the parent of that element has a set height!
+      - When you have the basic layout completed with CSS, use the included image assets to create the design below:
+  #### Initial CSS build with background images
 ![demo-pic-1](../images/demo-pic-1.png)
 
-
-
-
-
-
-
+  - Notes on the above image:
+    - The background image is `lfz-background` and the card image is `lfz-card`
+    - Using `background-images` rather than `img` tags is recommend for all of the images in this app because of the styling flexibility `background-images` give the developer.
+- When you have completed the CSS so that your application closely resembles the Design Doc, You have completed this Feature Set!!! Please Move on to the `After Each Feature` section below.
 
 
 ### After Each Feature
