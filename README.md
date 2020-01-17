@@ -60,7 +60,7 @@ Before starting on this project, you will need to **fork** and then **clone** th
 ## Features
 1. Below is the breakdown of feature sets you need to complete in order to finish the MVP (Minimal Viable Product).
 
-- HTML Skeleton - [Instructions](guides/features/skeleton.md)
+- User Can View Game - [Instructions](guides/features/skeleton.md)
 - Flip One Card - [Instructions](guides/features/flip-one-card.md)
 - Match Two Cards - [Instructions](guides/features/match-two-cards.md)
 - Win Condition - [Instructions](guides/features/win-condition.md)

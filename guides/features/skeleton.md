@@ -1,56 +1,139 @@
-Instructions - Skeleton
+Instructions - User Can View Game
 --
 
 ### Overview
 
-In this feature, you are going to use HTML and CSS to create and initially style the skeleton of your Memory Match application.
+In this feature, you are going to set up the project and complete all the work necessary to view the Memory Match game.
+
+Let's look at a list of steps which much be accomplished for the Feature.
+
+1. Design a simple grid system for use in constructing the layout.
+2. Identify what primary elements you will need to divide the page correctly.
+3. Identify the child elements you will need in each of the primary elements.
+4. Build the initial HTML skeleton based on the required element list.
+5. Implement the correct CSS to style the skeleton based on the Design Doc
+
 
 Here is an example of the initial skeleton
 
 #### Initial Build
-![initial-build](../images/basic-template.jpg)
+![initial-build](../images/basic-template.png)
 
-## Notice that the page is divided into 3 sections:
-  - A `<header>` element, which will be used for a heading and/or logo.
-  - An `<aside>` element, which will be used to hold data / information regarding game stats.
-  - a `<main>` element, which will be used to hold the cards to play through your Memory Match game.
+Now that you the basic layout of what you have to build, let's take a look at the steps above in order:
 
-## Things to consider about the skeletal structure
-  - It is recommended to use a simple `grid` structure for the overall layout.
-    - Start with a `container` element which will hold the 3 primary elements
-    - Now consider how two rows could be used for the layout:
-      - One row for the `header`
-      - One row for the `aside` and the `main`
-    - Now think about `columns`
-      - The `header` appears to use all available columns.
-      - The `aside` appears to use about 1 / 5 of the total width.
-      - The `main` appears to use the remaining 4 / 5s of the total width.
-      - So perhaps using 5 total columns would be useful...?
-  - Once you have completed planning the grid layout, let's look at the child elements contained within the 3 primary elements:
-  
+## 1. Design a simple grid system for use in constructing the layout.
+
+  - First let's remember the components of a grid system:
+    - A Container
+      - Which is a fixed size container that holds the rows and columns of the layout.
+    - A Row
+      - Which is a horizontal collection of elements which span the width of the container.
+    - A Column
+      - Which is a unit of space on the x axis that determines the width of individual elements in a row.
+  - Now, let's look at the Design Doc again and consider how to break the layout down into a simple grid:
+    - Notice that there is are two rows of content:
+      - A header which takes up the entire width of the page
+      - And two Elements which hold Stats information and the Game cards
+    - This means the layout can be broken down into:
+      - A single `Container`
+      - With two `Rows`
+    - With that information in hand, it is time to decide on columns.
+  - Most popular third party grid systems such as BootStrap and Materialize use a 12 column grid system, so that will be a great place to start.
+    - If we take 100% and divide it by 12, that gives us approximately 8.33% per column. So let's use 8% to give us a little room to manuever
+      - The reason for this slight reduction in column size is that Bootstrap and other grid libraries use a lot of additional CSS for Margin, Padding, and few other things to allow their system to use a truly 100% wide - 12 column setup.
+      - But for the purposes of this application, a slight reduction in column size will have a negligible affect, and will vastly simplify the creation of the grid system you are using.
+  - Now that we have decided on a 12 column grid system with 8% wide columns, let's construct the CSS classes for the grid!
+    - Create a new grid.css file as a sibling to the current style.css file.
+      - Create a class named `container` with the following CSS:
+        - width: 100%
+        - max-width: 1500px
+        - margin: auto
+        - The above CSS will create a container which is centered on screens which are wider than 1500px and takes up 100% of the width on screens less than 1500px wide.
+      - Next create a class named `row` with the following CSS:
+        - width: 100%
+        - display: flex
+        - margin-bottom: .5rem
+        - The above CSS will create a row which is 100% of the width of the container, creates a little space between rows, and is prepared to use `flexbox` properties on its children.
+      - Finally, create the 12 column classes with width set to increments of 8%. For example:
+        ``` css
+          .col-1 {
+            width: 8%;
+          }
+          .col-2 {
+            width: 16%;
+          }
+          .col-3 {
+            width: 24%;
+          }
+        ```
+          - Make sure to create all 12 classes!
+  - With the CSS for our custom grid complete, it's time to move on to the next step!
+
+  ## 2. Identify what primary elements you will need to divide the page correctly.
+
+  - Looking at the Design Doc again:
+    ![initial-build](../images/basic-template.png)
+    We notice that there are 3 Primary elements in the layout:
+    - A `<header>` element, which will be used for a heading and/or logo.
+    - An `<aside>` element, which will be used to hold data / information regarding game stats.
+    - a `<main>` element, which will be used to hold the cards to play through your Memory Match game.
+  - Most layouts can be broken down into only a few primary elements just as this one can be. So with the knowledge of the three elements we need. Let's move on to the next step!
+
+  ## 3. Identify the child elements you will need in each of the primary elements.
+
+  - Looking at the Design Doc once again:
+    ![initial-build](../images/basic-template.png)
+    Let's evaluate which child elements are needed in each of the primary elements:
+      - `<header>`
+        - child elements:
+          - There is a single line of text
+            - This requires a single text element.
+      - `<aside>`
+        - child elements:
+          - There are 7 boxes within the `aside` element, and each of the boxes contains text
+            - This requires 7 divs, and each div will have a text element as a child.
+      - `<main>`
+        - child elements:
+          - There are 18 boxes within the `main` element
+            - This requires a minimum of 18 divs.
+      - `Note:` Some of the above element amounts may increase or otherwise change as you continue to build the game, but these are the correct number to start with at this stage of planning!
+      - With our child elements determined, move on to the next step!
+
+  ## 4. Build the initial HTML skeleton based on the required element list.
+
+  - Now it is time to build the initial HTML structure for the Memory Match game:
+    - Using the list of required elements from steps 2 and 3, create your HTML skeleton in the `index.html` file.
+      - Remember that some elements you may initially choose could be replaced, but the most important thing is to create a skeleton based on the available information!
+    - Once you have completed the initial skeleton build, move on to the next step!
+
+  ## 5. Implement the correct CSS to style the HTML skeleton based on the Design Doc
+
+  - With the initial HTML skeleton completed, it is now time to start adding CSS.
+  - There is a list of things to consider
 
 
 
-- In a `style.css` file, include the CSS properties to get a rough match of the provided design doc.
-  - Keep in mind that the initial build will be for a static page.
-  - It will be refactored into full responsiveness prior to inclusion in your portfolio, but:
-    - You do not have the time for a responsive build at this point.
-    - Focus on learning how to position elements on the page.
-    - Float and Flexbox are both useful for building the layout.
-      - Create classes on the elements you want to apply CSS to, use those classes for CSS selection.
-        - Do not use ids for styling, ids are for JavaScript selection.
-      - Use borders / background colors to ease the viewing of the elements you want to position on the page.
-      - Use the styles feature of the Chrome Inspector to make changes in real time.
-  - And Lastly, CSS is hard! Make sure to ask questions and keep at it!
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Design Docs
 
-#### Final Design with all assests
+#### Initial CSS build with background images
 ![demo-pic-1](../images/demo-pic-1.png)
 
-#### With cards flipped to show images
-![demo-pic-2](../images/demo-pic-2.png)
+
 
 
 
