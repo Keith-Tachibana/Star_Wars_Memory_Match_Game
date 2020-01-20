@@ -72,7 +72,7 @@ Now that you the basic layout of what you have to build, let's take a look at th
   ## 2. Identify what primary elements you will need to divide the page correctly.
 
   - Looking at the Design Doc again:
-    ![initial-build](../images/basic-template.png)
+    ![initial-build](../images/basic-template-annotated-1.png)
     We notice that there are 3 Primary elements in the layout:
     - A `<header>` element, which will be used for a heading and/or logo.
     - An `<aside>` element, which will be used to hold data / information regarding game stats.
