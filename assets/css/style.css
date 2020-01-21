@@ -1,1 +1,52 @@
+body {
+  background-image: url("../images/lfz-background.jpg");
+  background-repeat: no-repeat;
+  height: 97vh;
+}
 
+.title-container {
+  background-color: #5DB7DE;
+}
+
+.title-text {
+  font-size: 4rem;
+  letter-spacing: 10px;
+  font-family: "Inconsolata", monospace;
+}
+
+.aside {
+  font-family: "Inconsolata", monospace;
+  font-size: 2rem;
+  color: black;
+  height: 100%;
+}
+
+.aside > div {
+  background-color: #5DB7DE;
+  text-align: center;
+  height: 12%;
+  width: 80%;
+}
+
+.aside div > * {
+  margin-top: 6%;
+  padding-top: 11%;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.card-item {
+  background-image: url("../images/lfz-card.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+  margin: 3px;
+  height: 30%;
+
+
+}
