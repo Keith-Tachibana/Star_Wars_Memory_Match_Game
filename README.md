@@ -63,8 +63,8 @@ Before starting on this project, you will need to **fork** and then **clone** th
 - User Can View Game - [Instructions](guides/features/skeleton.md)
 - User Can Flip Cards - [Instructions](guides/features/flip-one-card.md)
 - User can Match Two Cards - [Instructions](guides/features/match-two-cards.md)
-<!-- - Win Condition - [Instructions](guides/features/win-condition.md)
-- Tracking Stats - [Instructions](guides/features/tracking-stats.md)
+- User Can Win Game - [Instructions](guides/features/win-condition.md)
+<!-- - Tracking Stats - [Instructions](guides/features/tracking-stats.md)
 - Resetting Game - [Instructions](guides/features/resetting-game.md) -->
 
 ### Bonus Feature / Challenge
