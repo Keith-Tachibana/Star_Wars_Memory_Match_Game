@@ -1,4 +1,4 @@
-Instructions - Win Condition
+Instructions - User Can Win Game
 --
 
 ### Overview
