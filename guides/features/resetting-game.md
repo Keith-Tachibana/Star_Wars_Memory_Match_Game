@@ -52,7 +52,9 @@ In this feature, you are resetting the game.
   ![Merge pull request](../post-feature/merge-pull-request.gif)
   5. Update master with the new changes:
   ![Update master](../post-feature/pull-new-changes.gif)
-  6. Make your pull request to the Learning Fuze Memory Match Repository for review!
+  6. Create a pull request from your updated master branch to the student-reviews branch and send the pull request to your lead instructor in Slack.
+![pull request from master](../post-feature/pull-request.gif)
+  7. Make your pull request to the Learning Fuze Memory Match Repository for review!
 
   ### How to turn in your project for review!
 

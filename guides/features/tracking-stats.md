@@ -58,4 +58,6 @@ In this feature, you will now begin working with all the cards to introduce stat
   ![Merge pull request](../post-feature/merge-pull-request.gif)
   5. Update master with the new changes:
   ![Update master](../post-feature/pull-new-changes.gif)
-  6. Go back to [Features](../../README.md#features), if you're still working through the project.
+  6. Create a pull request from your updated master branch to the student-reviews branch and send the pull request to your lead instructor in Slack.
+![pull request from master](../post-feature/pull-request.gif)
+  7. Go back to [Features](../../README.md#features), if you're still working through the project.
