@@ -33,9 +33,9 @@ So now that we have a list of tasks to complete, let's get started!
 
 - Now that you have a variable which contains the value for the maximum number of possible matches, and a variable which will be used to store the number of matches the user completes while playing the game, it is time to add functionality which will properly track the amount of matches made by the user.
 
-- The first thing to figure out is when you will have to `increment` the `matches` variable during the game.
+- The first thing to figure out is `WHEN` you will have to `increment` the `matches` variable during the game.
     - This is an important part of developing logic.
-    - In this example, you need to `increment` the `matches` variable every time the user matches two cards.
+    - In this game, you need to `increment` the `matches` variable every time the user matches two cards.
     - Within the above information in mind:
         - Find the conditional code block within the `handleClick` function which runs when the two selected cards match.
         - Within the correct code block:
@@ -65,33 +65,29 @@ So now that we have a list of tasks to complete, let's get started!
 
 - Let's take a moment to discuss what a modal is.
     - First, do not confuse a `bootstrap` modal with a modal more generally!
-        - A `bootstrap` modal
+        - A `bootstrap` modal is a very specific HTML structure that is designed to work with the `bootstrap` library. It also requires the use of `jQuery` and other JavaScript code.
+    - A `modal` is simply an element which shows up on the screen to either inform the user of something happening, such as when they win a game, or when the user has to input information for the application, like when a form pops up so that a user can log in on a membership website.
+        - It is also recommended to make modals `position:fixed` so that when they appear on the screen, they do not affect the flow of the document and move other elements.
+        - Fixed positioning also makes it so that the user cannot escape your modal.
+            - I'm sure you have experienced this on many websites when a modal appears and you cannot scroll past it.
+- So with the understanding that a modal is just a hidden element, usually with fixed positioning, note this example:
 
+![modal example](../images/example-modal.png)
+- The above is a simple but effective modal.
+- So with the above information in mind, create a modal in HTML which is a sibling element to the `container` element, and style it with some CSS.
+    - Once you have completed the design of the modal, make sure you add the `hidden` class to it so that it does not show up on the screen when the app loads.
+- When you have completed the above and your modal is hidden and ready to excite the user, move on to the next step!
 
+## 5. Add JavaScript functionality to show the modal when the user wins.
 
+- Now that you have a completed modal which is hidden using the `hidden` class, it is time to add JavaScript functionality which will unhide the modal when the user wins the game.
+    - Delete the "you have won!" console log.
+    - Replace it with JavaScript code which will remove the `hidden` class from the modal when the user matches all of the cards.
+    - Example Functionality:
+    ![winning modal](../feature-gifs/winning-modal.gif)
 
-
-
-### Feature Set
-
-1. In your `index.html`, uncomment another card.
-    - Add the proper background images to the child divs
-    - There should now be a total of four cards displayed on the page.
-2. In your `script.js`, declare another variable in the same global space as the previous variables:
-    - `max_matches`
-    - Set the of the `max_matches` value to the number 2
-3. After each successful match of the two cards you have clicked:
-    - check if your `matches` variable is equal to the `max_matches` variable
-      - If true, display the modal to verify that there is a "win". This will now complete the game.
-    - If false, nothing happens, the user will continue playing the game.
-
-### Design Docs
-
-#### Win Condition with Modal
-![win condition](../feature-gifs/win-condition.gif)
-
-
-
+    - When the above is complete and your modal shows correctly when all the cards are matched, Congratulations! you have completed this Feature!
+    - Move on to the `After Each Feature` section.
 
 ### After Each Feature
 
