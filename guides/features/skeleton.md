@@ -37,6 +37,7 @@ Now that you the basic layout of what you have to build, let's take a look at th
     - This means the layout can be broken down into:
       - A single `Container`
       - With two `Rows`
+![initial-build](../images/basic-template-annotated-2.png)
     - With that information in hand, it is time to decide on columns.
   - Most popular third party grid systems such as BootStrap and Materialize use a 12 column grid system, so that will be a great place to start.
     - If we take 100% and divide it by 12, that gives us approximately 8.33% per column. So let's use 8% to give us a little room to manuever
