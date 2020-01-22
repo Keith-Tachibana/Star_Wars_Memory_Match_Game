@@ -46,10 +46,10 @@ body {
 
 .shuffle-button {
   font-family: "Inconsolata", monospace;
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin-top: 6%;
   width: 80%;
-  height: 13%;
+  height: 12%;
   background-color: #5DB7DE;
   border-width: 0;
   border-radius: 15px;

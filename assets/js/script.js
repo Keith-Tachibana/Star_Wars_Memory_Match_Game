@@ -4,7 +4,6 @@ const resetButton = document.querySelector('.reset');
 const gamesScore = document.querySelector('.games-score');
 const attemptsScore = document.querySelector('.attempts-score');
 const accuracyScore = document.querySelector('.accuracy-score');
-const cardFront = document.querySelectorAll('.card-front');
 const shuffleButton = document.querySelector('.shuffle-button');
 
 var firstCardClicked, secondCardClicked, firstCardClasses, secondCardClasses, maxMatches, matches, gamesPlayed, attempts, accuracy;
@@ -68,11 +67,18 @@ function handleClick(event) {
 }
 
 function resetCards () {
-  cardFront.forEach(element => element.removeAttribute('class'));
+  mainElement.innerHTML = '';
   var newCardDeck = cardDeck.sort(function() { return 0.5-Math.random() });
   for (var i = 0; i < newCardDeck.length; i++) {
-    cardFront.forEach(element => element.setAttribute('class', 'card-front'));
-    cardFront.forEach(element => element.classList.add(newCardDeck[i]));
+    var newCardItem = document.createElement('div');
+    newCardItem.classList.add("card-item", "col-2");
+    var newCardFront = document.createElement('div');
+    newCardFront.className = "card-front";
+    newCardFront.classList.add(newCardDeck[i]);
+    var newCardBack = document.createElement('div');
+    newCardBack.classList.add("card-back");
+    newCardItem.append(newCardFront, newCardBack);
+    mainElement.appendChild(newCardItem);
   }
 }
 
