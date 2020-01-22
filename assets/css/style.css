@@ -2,6 +2,7 @@ body {
   background-image: url("../images/lfz-background.jpg");
   background-repeat: no-repeat;
   height: 97vh;
+  width: 97vw;
 }
 
 .title-container {
@@ -41,6 +42,34 @@ body {
 
 .games-score, .attempts-score, .accuracy-score {
   color: red;
+}
+
+.shuffle-button {
+  font-family: "Inconsolata", monospace;
+  font-size: 2rem;
+  margin-top: 6%;
+  width: 80%;
+  height: 13%;
+  background-color: #5DB7DE;
+  border-width: 0;
+  border-radius: 15px;
+  font-weight: bold;
+  font-style: italic;
+  border: none;
+  box-shadow: 0 9px #999;
+  outline: none;
+  cursor: pointer;
+}
+
+.shuffle-button:hover {
+  background-color: #3772FF;
+  color: #000;
+}
+
+.shuffle-button:active {
+  background-color: #3772FF;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .main {
@@ -107,7 +136,7 @@ body {
 
 .modal {
   position: fixed;
-  background-color: crimson;
+  background-image: linear-gradient(-90deg, red, yellow);
   color: black;
   width: 60%;
   text-align: center;
@@ -120,10 +149,11 @@ body {
   font-family: "Inconsolata", monospace;
   font-weight: bolder;
   transition: width 1.5s;
+  border-radius: 50px;
 }
 
 .modal:hover {
-  width: 80%
+  width: 80%;
 }
 
 .modal-text {
@@ -145,10 +175,19 @@ body {
   border-width: 0;
   border-radius: 10px;
   border: 0.5px ridge black;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .reset:hover {
   background-color: greenyellow;
+}
+
+.reset:active {
+  background-color: greenyellow;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .hidden {
