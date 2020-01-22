@@ -9,14 +9,14 @@ body {
 }
 
 .title-text {
-  font-size: 4rem;
-  letter-spacing: 10px;
+  font-size: 6rem;
+  letter-spacing: 25px;
   font-family: "Inconsolata", monospace;
 }
 
 .aside {
   font-family: "Inconsolata", monospace;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: black;
   height: 100%;
 }
@@ -31,6 +31,16 @@ body {
 .aside div > * {
   margin-top: 6%;
   padding-top: 11%;
+}
+
+.stats-text {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 2.25rem;
+}
+
+.games-score, .attempts-score, .accuracy-score {
+  color: red;
 }
 
 .main {
@@ -99,7 +109,7 @@ body {
   position: fixed;
   background-color: crimson;
   color: black;
-  width: 50%;
+  width: 60%;
   text-align: center;
   top: 50%;
   left: 50%;
@@ -109,7 +119,7 @@ body {
   box-shadow: 30px 30px #F90093, 40px 40px #61E294, 50px 50px #B47AEA;
   font-family: "Inconsolata", monospace;
   font-weight: bolder;
-  transition: width 2s;
+  transition: width 1.5s;
 }
 
 .modal:hover {
@@ -118,8 +128,27 @@ body {
 
 .modal-text {
   position: relative;
-  top: 100px;
+  top: 5px;
+}
 
+.modal-text > p {
+  font-family: "Inconsolata", monospace;
+  font-size: 3rem;
+}
+
+.reset {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.75rem;
+  height: 50px;
+  width: 250px;
+  background-color: forestgreen;
+  border-width: 0;
+  border-radius: 10px;
+  border: 0.5px ridge black;
+}
+
+.reset:hover {
+  background-color: greenyellow;
 }
 
 .hidden {
