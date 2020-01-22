@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Memory Match</title>
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-    <link href="assets/css/grid.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />
-  </head>
-  <body>
+
+<head>
+  <title>Memory Match</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  <link href="assets/css/grid.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
     <div class="row">
       <header class="header">
         <div class="title-container">
@@ -38,62 +41,87 @@
           <h4 class="accuracy-score">0</h4>
         </div>
       </aside>
-      <main class="main col-10">
+      <main class="main col-10" id="gameCards">
         <div class="card-item col-2">
-
+          <div class="card-front js-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front js-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front html-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front html-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front github-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front github-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front docker-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front docker-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front css-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front css-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front mysql-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front mysql-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front node-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front node-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front php-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front php-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front react-logo"></div>
+          <div class="card-back"></div>
         </div>
         <div class="card-item col-2">
-
+          <div class="card-front react-logo"></div>
+          <div class="card-back"></div>
         </div>
       </main>
     </div>
-  </body>
+  </div>
+  <div class="modal hidden">
+    <div class="modal-text">
+      <h3>Congratulations! You have won!!!</h3>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
 </html>

@@ -37,16 +37,91 @@ body {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .card-item {
-  background-image: url("../images/lfz-card.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: white;
   margin: 3px;
   height: 30%;
+  padding: 0;
+  position: relative;
+}
 
+.card-front, .card-back {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
 
+.card-back {
+  background-image: url("../images/lfz-card.jpg");
+}
+
+.js-logo {
+  background-image: url("../images/js-logo.png");
+}
+
+.html-logo {
+  background-image: url("../images/html-logo.png");
+}
+
+.github-logo {
+  background-image: url("../images/gitHub-logo.png");
+}
+
+.docker-logo {
+  background-image: url("../images/docker-logo.jpg");
+}
+
+.css-logo {
+  background-image: url("../images/css-logo.png");
+}
+
+.mysql-logo {
+  background-image: url("../images/mysql-logo.jpg");
+}
+
+.node-logo {
+  background-image: url("../images/node-logo.png");
+}
+
+.php-logo {
+  background-image: url("../images/php-logo.jpeg");
+}
+
+.react-logo {
+  background-image: url("../images/react-logo.png");
+}
+
+.modal {
+  position: fixed;
+  background-color: crimson;
+  color: black;
+  width: 50%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  font-size: 4rem;
+  box-shadow: 30px 30px #F90093, 40px 40px #61E294, 50px 50px #B47AEA;
+  font-family: "Inconsolata", monospace;
+  font-weight: bolder;
+  transition: width 2s;
+}
+
+.modal:hover {
+  width: 80%
+}
+
+.modal-text {
+  position: relative;
+  top: 100px;
+
+}
+
+.hidden {
+  display: none;
 }
