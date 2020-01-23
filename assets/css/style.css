@@ -7,7 +7,7 @@ body {
 }
 
 .title-text {
-  font-size: 6rem;
+  font-size: 5rem;
   letter-spacing: 25px;
   font-family: "Inconsolata", monospace;
   color: #EEC643;
@@ -23,7 +23,7 @@ body {
 .aside > div {
   background-color: rgba(238, 198, 67, 0.5);
   text-align: center;
-  height: 8%;
+  height: 9%;
   width: 80%;
   border-radius: 15px;
 }
@@ -38,7 +38,7 @@ body {
   margin: 0 auto;
 }
 
-.timer-score, .games-score, .attempts-score, .accuracy-score {
+.games-score, .matches-score, .attempts-score, .accuracy-score {
   color: red;
 }
 
@@ -151,40 +151,40 @@ body {
   border: 2px groove red;
 }
 
-.js-logo {
-  background-image: url("../images/js-logo.png");
+.chewbacca {
+  background-image: url("../images/chewbacca.jpg");
 }
 
-.html-logo {
-  background-image: url("../images/html-logo.png");
+.emperor {
+  background-image: url("../images/emperor.jpg");
 }
 
-.github-logo {
-  background-image: url("../images/gitHub-logo.png");
+.hansolo {
+  background-image: url("../images/hansolo.webp");
 }
 
-.docker-logo {
-  background-image: url("../images/docker-logo.jpg");
+.leia {
+  background-image: url("../images/leia.jpg");
 }
 
-.css-logo {
-  background-image: url("../images/css-logo.png");
+.luke {
+  background-image: url("../images/luke.png");
 }
 
-.mysql-logo {
-  background-image: url("../images/mysql-logo.jpg");
+.obiwan {
+  background-image: url("../images/obiwan.webp");
 }
 
-.node-logo {
-  background-image: url("../images/node-logo.png");
+.padme {
+  background-image: url("../images/padme.jpg");
 }
 
-.php-logo {
-  background-image: url("../images/php-logo.jpeg");
+.vader {
+  background-image: url("../images/vader.jpg");
 }
 
-.react-logo {
-  background-image: url("../images/react-logo.png");
+.yoda {
+  background-image: url("../images/yoda.jpg");
 }
 
 .modal {
@@ -296,11 +296,171 @@ body {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-/*
-@media only screen and (max-width: 1512px) {
-
+@media only screen and (max-width: 1500px) {
+  .title-text {
+    font-size: 3.5rem;
+    letter-spacing: 15px;
+  }
 }
-*/
+
+@media only screen and (max-width: 1160px) {
+  .card-item {
+    width: 15%;
+  }
+
+  .title-text {
+    font-size: 3rem;
+    letter-spacing: 15px;
+  }
+
+  .shuffle-button {
+    font-size: 1.25rem;
+  }
+
+  .aside {
+    font-size: 1rem;
+  }
+
+  .modal {
+    font-size: 1.5rem;
+    height: 15%;
+    box-shadow: 10px 10px #F90093, 20px 20px #61E294, 30px 30px #B47AEA;
+  }
+
+  .modal-text > p {
+    font-size: 1rem;
+  }
+
+  .close {
+    font-size: 2.5rem;
+  }
+
+  .reset {
+    width: 15%;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .title-text {
+    font-size: 2rem;
+    letter-spacing: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title-text {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+  }
+
+  .card-item {
+    width: 14%;
+  }
+
+  .aside {
+    font-size: 0.6rem;
+  }
+
+  .shuffle-button {
+    font-size: 0.6rem;
+  }
+
+  .modal {
+    font-size: 0.65rem;
+    height: 9%;
+    box-shadow: 5px 5px #F90093, 10px 10px #61E294, 15px 15px #B47AEA;
+  }
+
+  .modal-text > p {
+    font-size: 0.65rem;
+  }
+
+  .reset {
+    width: 25%;
+    height: 20px;
+    font-size: 0.45rem;
+  }
+
+  .close {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .title-text {
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+
+  .card-item {
+    width: 13%;
+  }
+
+  .aside {
+    font-size: 0.5rem;
+  }
+
+  .shuffle-button {
+    font-size: 0.5rem;
+  }
+
+  .modal {
+    font-size: 0.75rem;
+    height: 8%;
+    box-shadow: 5px 5px #F90093, 10px 10px #61E294, 15px 15px #B47AEA;
+  }
+
+  .modal-text > p {
+    font-size: 0.5rem;
+  }
+
+  .reset {
+    width: 15%;
+    height: 20px;
+    font-size: 0.25rem;
+  }
+
+  .close {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .title-text {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .aside {
+    font-size: 0.3rem;
+  }
+
+  .shuffle-button {
+    font-size: 0.3rem;
+  }
+
+  .modal {
+    font-size: 0.25rem;
+    height: 5%;
+    box-shadow: 5px 5px #F90093, 10px 10px #61E294, 15px 15px #B47AEA;
+  }
+
+  .modal-text > p {
+    font-size: 0.1rem;
+  }
+
+  .reset {
+    width: 30%;
+    height: 10px;
+    font-size: 0.25rem;
+  }
+
+  .close {
+    font-size: 0.75rem;
+  }
+}
 
 .hidden {
   display: none;

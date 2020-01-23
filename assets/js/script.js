@@ -6,27 +6,22 @@ const attemptsScore = document.querySelector('.attempts-score');
 const accuracyScore = document.querySelector('.accuracy-score');
 const shuffleButton = document.querySelector('.shuffle-button');
 const closeButton = document.querySelector('.close');
-const timerScore = document.querySelector('.timer-score');
-const startButton = document.querySelector('.start');
+const matchesScore = document.querySelector('.matches-score');
 
-var firstCardClicked, secondCardClicked, firstCardClasses, secondCardClasses, maxMatches, matches, gamesPlayed, attempts, accuracy, totalSeconds;
+var firstCardClicked, secondCardClicked, firstCardClasses, secondCardClasses, maxMatches, matches, gamesPlayed, attempts, accuracy;
 
-var cardDeck = ['js-logo', 'js-logo', 'html-logo', 'html-logo', 'github-logo', 'github-logo', 'docker-logo', 'docker-logo', 'css-logo', 'css-logo', 'mysql-logo', 'mysql-logo', 'node-logo', 'node-logo', 'php-logo', 'php-logo', 'react-logo', 'react-logo'];
+var cardDeck = ['chewbacca', 'emperor', 'hansolo', 'leia', 'luke', 'obiwan', 'padme', 'vader', 'yoda', 'chewbacca', 'emperor', 'hansolo', 'leia', 'luke', 'obiwan', 'padme', 'vader', 'yoda'];
 
 accuracy = 0;
 attempts = 0;
 maxMatches = 9;
 matches = 0;
 gamesPlayed = 0;
-totalSeconds = 0;
 
 mainElement.addEventListener('click', handleClick);
 shuffleButton.addEventListener('click', shuffleCards);
 resetButton.addEventListener('click', shuffleCards);
-closeButton.addEventListener('click', function() {
-  modalElement.classList.add("hidden");
-})
-startButton.addEventListener('click', startGame);
+closeButton.addEventListener('click', dismissModal);
 
 function handleClick(event) {
   var clickedTarget = event.target;
@@ -51,6 +46,7 @@ function handleClick(event) {
       firstCardClicked = null;
       secondCardClicked = null;
       matches += 1;
+      matchesScore.textContent = matches;
       accuracy = ((matches / attempts) * 100).toFixed(2);
       accuracyScore.textContent = accuracy+'%';
       if (matches === maxMatches) {
@@ -74,6 +70,10 @@ function handleClick(event) {
   }
 }
 
+function dismissModal () {
+  modalElement.classList.add("hidden");
+}
+
 function resetCards () {
   mainElement.innerHTML = '';
   var newCardDeck = cardDeck.sort(function() { return 0.5-Math.random() });
@@ -92,6 +92,7 @@ function resetCards () {
 
 function shuffleCards () {
   matches = 0;
+  matchesScore.textContent = matches;
   attempts = 0;
   attemptsScore.textContent = attempts;
   accuracy = "0.00";
@@ -102,23 +103,4 @@ function shuffleCards () {
   }
   modalElement.classList.add("hidden");
   resetCards();
-}
-
-function startGame () {
-  var interval = setInterval(function() {
-    ++totalSeconds;
-    var minutes = Math.floor(totalSeconds/60);
-    var seconds = totalSeconds - (minutes*60);
-    if (minutes < 10) {
-      minutes = "0" + minutes;
-    }
-    if (seconds < 10) {
-      seconds = "0" + seconds;
-    }
-    timerScore.innerHTML = minutes + ":" + seconds;
-  }, 1000);
-  if (matches === maxMatches) {
-    clearInterval(interval);
-  }
-
 }
