@@ -33,11 +33,6 @@ body {
   padding-top: 12%;
 }
 
-.games-text {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .games-score, .matches-score, .attempts-score, .accuracy-score {
   color: red;
 }
@@ -198,7 +193,7 @@ body {
   transform: translate(-50%, -50%);
   height: 400px;
   font-size: 3rem;
-  box-shadow: 30px 30px #F90093, 40px 40px #61E294, 50px 50px #B47AEA;
+  box-shadow: 20px 20px #F90093, 30px 30px #61E294, 40px 40px #B47AEA;
   font-family: "Inconsolata", monospace;
   font-weight: bolder;
   border-radius: 50px;
@@ -296,171 +291,232 @@ body {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@media only screen and (max-width: 1500px) {
-  .title-text {
-    font-size: 3.5rem;
-    letter-spacing: 15px;
-  }
-}
-
-@media only screen and (max-width: 1160px) {
-  .card-item {
-    width: 15%;
-  }
-
-  .title-text {
-    font-size: 3rem;
-    letter-spacing: 15px;
-  }
-
-  .shuffle-button {
-    font-size: 1.25rem;
-  }
-
-  .aside {
-    font-size: 1rem;
-  }
-
-  .modal {
-    font-size: 1.5rem;
-    height: 15%;
-    box-shadow: 10px 10px #F90093, 20px 20px #61E294, 30px 30px #B47AEA;
-  }
-
-  .modal-text > p {
-    font-size: 1rem;
-  }
-
-  .close {
-    font-size: 2.5rem;
-  }
-
-  .reset {
-    width: 15%;
-    height: 30px;
-    font-size: 0.75rem;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .title-text {
-    font-size: 2rem;
-    letter-spacing: 10px;
-  }
-}
-
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .title-text {
+    font-size: 4rem;
+  }
+
+  .aside {
+    font-size: 2rem;
+  }
+
+  .shuffle-button {
+    font-size: 2rem;
+  }
+
+  .card-item {
+    height: 30%;
+  }
+
+  .modal {
     font-size: 1.5rem;
-    letter-spacing: 5px;
-  }
-
-  .card-item {
-    width: 14%;
-  }
-
-  .aside {
-    font-size: 0.6rem;
-  }
-
-  .shuffle-button {
-    font-size: 0.6rem;
-  }
-
-  .modal {
-    font-size: 0.65rem;
-    height: 9%;
-    box-shadow: 5px 5px #F90093, 10px 10px #61E294, 15px 15px #B47AEA;
+    height: 200px;
   }
 
   .modal-text > p {
-    font-size: 0.65rem;
+    font-size: 1.5rem;
   }
 
   .reset {
-    width: 25%;
-    height: 20px;
-    font-size: 0.45rem;
+    font-size: 1.25rem;
+    height: 40px;
+    width: 150px;
   }
 
   .close {
-    font-size: 1.75rem;
+    font-size: 3rem;
   }
 }
 
-@media only screen and (max-width: 400px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   .title-text {
-    font-size: 1rem;
-    letter-spacing: 5px;
-  }
-
-  .card-item {
-    width: 13%;
+    font-size: 4rem;
   }
 
   .aside {
-    font-size: 0.5rem;
+    font-size: 2rem;
   }
 
   .shuffle-button {
-    font-size: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .card-item {
+    height: 30%;
   }
 
   .modal {
-    font-size: 0.75rem;
-    height: 8%;
-    box-shadow: 5px 5px #F90093, 10px 10px #61E294, 15px 15px #B47AEA;
+    font-size: 1.5rem;
+    height: 200px;
   }
 
   .modal-text > p {
-    font-size: 0.5rem;
+    font-size: 1.5rem;
   }
 
   .reset {
+    font-size: 1.25rem;
+    height: 40px;
+    width: 150px;
+  }
+
+  .close {
+    font-size: 3rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-size: 300% 300%;
+  }
+
+  .title-text {
+    font-size: 4rem;
+    letter-spacing: 5px;
+  }
+
+  .aside {
+    font-size: 1.5rem;
+  }
+
+  .shuffle-button {
+    font-size: 1.5rem;
+  }
+
+  .card-item {
+    height: 30%;
     width: 15%;
-    height: 20px;
-    font-size: 0.25rem;
-  }
-
-  .close {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  .title-text {
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-  }
-
-  .aside {
-    font-size: 0.3rem;
-  }
-
-  .shuffle-button {
-    font-size: 0.3rem;
   }
 
   .modal {
-    font-size: 0.25rem;
-    height: 5%;
-    box-shadow: 5px 5px #F90093, 10px 10px #61E294, 15px 15px #B47AEA;
+    font-size: 1.5rem;
+    height: 225px;
   }
 
   .modal-text > p {
-    font-size: 0.1rem;
+    font-size: 1.4rem;
   }
 
   .reset {
-    width: 30%;
-    height: 10px;
-    font-size: 0.25rem;
+    font-size: 1.25rem;
+    height: 40px;
+    width: 150px;
   }
 
   .close {
-    font-size: 0.75rem;
+    font-size: 3rem;
   }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .title-text {
+    font-size: 4rem;
+    letter-spacing: 5px;
+  }
+
+  .aside {
+    font-size: 1.5rem;
+  }
+
+  .shuffle-button {
+    font-size: 1.5rem;
+  }
+
+  .card-item {
+    height: 30%;
+    width: 15%;
+  }
+
+  .modal {
+    font-size: 1.5rem;
+    height: 200px;
+  }
+
+  .modal-text > p {
+    font-size: 1.4rem;
+  }
+
+  .reset {
+    font-size: 1.25rem;
+    height: 40px;
+    width: 150px;
+  }
+
+  .close {
+    font-size: 3rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .title-text {
+    font-size: 5rem;
+    letter-spacing: 25px;
+  }
+
+  .aside {
+    font-size: 2rem;
+  }
+
+  .shuffle-button {
+    font-size: 2rem;
+  }
+
+  .card-item {
+    height: 30%;
+  }
+
+  .modal {
+    font-size: 1.5rem;
+    height: 200px;
+  }
+
+  .modal-text > p {
+    font-size: 1.4rem;
+  }
+
+  .reset {
+    font-size: 1.25rem;
+    height: 40px;
+    width: 150px;
+  }
+
+  .close {
+    font-size: 3rem;
+  }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  .title-text {
+    font-size: 5rem;
+    letter-spacing: 10px;
+  }
+
+  .modal {
+    height: 230px;
+    width: 48%;
+  }
+}
+
+/*
+@media only screen and (min-width: 1460px) {
+  .title-text {
+    font-size: 5rem;
+    letter-spacing: 10px;
+  }
+
+  .modal {
+    height: 225px;
+    width: 45%;
+  }
+}
+*/
 
 .hidden {
   display: none;
