@@ -1,47 +1,73 @@
 body {
-  background-image: url("../images/lfz-background.jpg");
+  background-image: url("../images/background.gif");
+  background-size: 100% 150%;
   background-repeat: no-repeat;
   height: 97vh;
   width: 97vw;
-}
-
-.title-container {
-  background-color: #5DB7DE;
 }
 
 .title-text {
   font-size: 6rem;
   letter-spacing: 25px;
   font-family: "Inconsolata", monospace;
+  color: #EEC643;
 }
 
 .aside {
   font-family: "Inconsolata", monospace;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: black;
   height: 100%;
 }
 
 .aside > div {
-  background-color: #5DB7DE;
+  background-color: rgba(238, 198, 67, 0.5);
   text-align: center;
-  height: 12%;
+  height: 8%;
   width: 80%;
+  border-radius: 15px;
 }
 
 .aside div > * {
   margin-top: 6%;
-  padding-top: 11%;
+  padding-top: 12%;
 }
 
-.stats-text {
-  text-decoration: underline;
-  font-style: italic;
-  font-size: 2.25rem;
+.games-text {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.games-score, .attempts-score, .accuracy-score {
+.timer-score, .games-score, .attempts-score, .accuracy-score {
   color: red;
+}
+
+.start {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.75rem;
+  margin-top: 6%;
+  width: 80%;
+  height: 10%;
+  background-color: #EEC643;
+  border-width: 0;
+  border-radius: 15px;
+  font-weight: bold;
+  font-style: italic;
+  border: 2px double #000;
+  outline: none;
+  cursor: pointer;
+}
+
+.start:hover {
+  background-color: #6D5A1F;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.start:active {
+  background-color: #6D5A1F;
+  box-shadow: 0 5px #EEF0F2;
+  transform: translateY(4px);
 }
 
 .shuffle-button {
@@ -49,27 +75,50 @@ body {
   font-size: 1.75rem;
   margin-top: 6%;
   width: 80%;
-  height: 12%;
-  background-color: #5DB7DE;
+  height: 10%;
+  background-color: #EEC643;
   border-width: 0;
   border-radius: 15px;
   font-weight: bold;
   font-style: italic;
-  border: none;
-  box-shadow: 0 9px #999;
+  border: 2px double #000;
   outline: none;
   cursor: pointer;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
 }
 
 .shuffle-button:hover {
-  background-color: #3772FF;
-  color: #000;
+  background-color: #6D5A1F;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .shuffle-button:active {
-  background-color: #3772FF;
-  box-shadow: 0 5px #666;
+  background-color: #6D5A1F;
+  box-shadow: 0 5px #EEF0F2;
   transform: translateY(4px);
+}
+
+.shuffle-button:after {
+  content: "";
+  background: #C3A337;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.shuffle-button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }
 
 .main {
@@ -95,7 +144,11 @@ body {
 }
 
 .card-back {
-  background-image: url("../images/lfz-card.jpg");
+  background-image: url("../images/storm-trooper.gif");
+}
+
+.card-back:hover {
+  border: 2px groove red;
 }
 
 .js-logo {
@@ -143,17 +196,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 500px;
-  font-size: 4rem;
+  height: 400px;
+  font-size: 3rem;
   box-shadow: 30px 30px #F90093, 40px 40px #61E294, 50px 50px #B47AEA;
   font-family: "Inconsolata", monospace;
   font-weight: bolder;
-  transition: width 1.5s;
   border-radius: 50px;
-}
-
-.modal:hover {
-  width: 80%;
 }
 
 .modal-text {
@@ -163,7 +211,24 @@ body {
 
 .modal-text > p {
   font-family: "Inconsolata", monospace;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+.close {
+  float: right;
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #000;
+}
+
+.close:hover, .close:focus {
+  cursor: pointer;
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+.close:active {
+  transform: translateY(4px);
 }
 
 .reset {
@@ -180,8 +245,35 @@ body {
   font-weight: bold;
 }
 
+.reset span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.reset span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
 .reset:hover {
   background-color: greenyellow;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.reset:hover span {
+  padding-right: 25px;
+}
+
+.reset:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .reset:active {
@@ -189,6 +281,26 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*
+@media only screen and (max-width: 1512px) {
+
+}
+*/
 
 .hidden {
   display: none;

@@ -13,17 +13,15 @@
     <div class="row">
       <header class="header">
         <div class="title-container">
-          <h1 class="title-text">LFZ Memory Match</h1>
+          <h1 class="title-text">Keith's Memory Match</h1>
         </div>
       </header>
     </div>
     <div class="row">
       <aside class="aside col-2">
-        <div class="stats-container">
-          <h4 class="stats-text">Stats:</h4>
-        </div>
+        <button class="start">Click to Start Game</button>
         <div class="games-container">
-          <h4 class="games-text">Games Played:</h4>
+          <h4 class="games-text">Games:</h4>
         </div>
         <div class="games-score-container">
           <h4 class="games-score">0</h4>
@@ -40,7 +38,10 @@
         <div class="accuracy-score-container">
           <h4 class="accuracy-score">0%</h4>
         </div>
-        <button class="shuffle-button">*Shuffle Cards*</button>
+        <div class="timer-container">
+          <h4 class="timer-score">00:00</h4>
+        </div>
+        <button class="shuffle-button">Click To Shuffle</button>
       </aside>
       <main class="main col-10" id="gameCards">
         <div class="card-item col-2">
@@ -120,11 +121,13 @@
   </div>
   <div class="modal hidden">
     <div class="modal-text">
+      <span class="close">&times;</span>
       <h3>Congratulations! You have won!!!</h3>
-      <p>(Click on button below to play again)</p>
-      <button class="reset">Reset Game</button>
+      <p>(Click button below to play again or 'X' to close)</p>
+      <button class="reset"><span>Reset Game </span></button>
     </div>
   </div>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
+--

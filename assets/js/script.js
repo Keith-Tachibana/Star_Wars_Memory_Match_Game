@@ -5,8 +5,11 @@ const gamesScore = document.querySelector('.games-score');
 const attemptsScore = document.querySelector('.attempts-score');
 const accuracyScore = document.querySelector('.accuracy-score');
 const shuffleButton = document.querySelector('.shuffle-button');
+const closeButton = document.querySelector('.close');
+const timerScore = document.querySelector('.timer-score');
+const startButton = document.querySelector('.start');
 
-var firstCardClicked, secondCardClicked, firstCardClasses, secondCardClasses, maxMatches, matches, gamesPlayed, attempts, accuracy;
+var firstCardClicked, secondCardClicked, firstCardClasses, secondCardClasses, maxMatches, matches, gamesPlayed, attempts, accuracy, totalSeconds;
 
 var cardDeck = ['js-logo', 'js-logo', 'html-logo', 'html-logo', 'github-logo', 'github-logo', 'docker-logo', 'docker-logo', 'css-logo', 'css-logo', 'mysql-logo', 'mysql-logo', 'node-logo', 'node-logo', 'php-logo', 'php-logo', 'react-logo', 'react-logo'];
 
@@ -15,10 +18,15 @@ attempts = 0;
 maxMatches = 9;
 matches = 0;
 gamesPlayed = 0;
+totalSeconds = 0;
 
 mainElement.addEventListener('click', handleClick);
 shuffleButton.addEventListener('click', shuffleCards);
 resetButton.addEventListener('click', shuffleCards);
+closeButton.addEventListener('click', function() {
+  modalElement.classList.add("hidden");
+})
+startButton.addEventListener('click', startGame);
 
 function handleClick(event) {
   var clickedTarget = event.target;
@@ -85,13 +93,32 @@ function resetCards () {
 function shuffleCards () {
   matches = 0;
   attempts = 0;
-  attemptsScore.textContent = 0;
-  accuracy = 0;
-  accuracyScore.textContent = 0 + '%';
+  attemptsScore.textContent = attempts;
+  accuracy = "0.00";
+  accuracyScore.textContent = accuracy + '%';
   var cardsHidden = document.querySelectorAll('.hidden');
   for (var i = 0; i < cardsHidden.length; i++) {
     cardsHidden[i].classList.remove("hidden");
   }
   modalElement.classList.add("hidden");
   resetCards();
+}
+
+function startGame () {
+  var interval = setInterval(function() {
+    ++totalSeconds;
+    var minutes = Math.floor(totalSeconds/60);
+    var seconds = totalSeconds - (minutes*60);
+    if (minutes < 10) {
+      minutes = "0" + minutes;
+    }
+    if (seconds < 10) {
+      seconds = "0" + seconds;
+    }
+    timerScore.innerHTML = minutes + ":" + seconds;
+  }, 1000);
+  if (matches === maxMatches) {
+    clearInterval(interval);
+  }
+
 }
