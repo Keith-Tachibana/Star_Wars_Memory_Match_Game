@@ -140,10 +140,14 @@ body {
 
 .card-back {
   background-image: url("../images/storm-trooper.gif");
+  transition: transform .2s;
 }
 
 .card-back:hover {
   border: 2px groove red;
+  transform: scale(1.2);
+  box-shadow: 5px 5px red, 10px 10px yellow;
+  z-index: 10;
 }
 
 .chewbacca {
@@ -186,17 +190,15 @@ body {
   position: fixed;
   background-image: linear-gradient(-90deg, red, yellow);
   color: black;
-  width: 60%;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 400px;
+  height: 40%;
   font-size: 3rem;
   box-shadow: 20px 20px #F90093, 30px 30px #61E294, 40px 40px #B47AEA;
   font-family: "Inconsolata", monospace;
   font-weight: bolder;
-  border-radius: 50px;
 }
 
 .modal-text {
@@ -291,41 +293,130 @@ body {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 310px) {
   .title-text {
-    font-size: 4rem;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    width: 80%;
+    text-align: center;
   }
 
   .aside {
-    font-size: 2rem;
+    font-size: 0.75rem;
   }
 
   .shuffle-button {
-    font-size: 2rem;
+    font-size: 0.75rem;
   }
 
   .card-item {
     height: 30%;
+    width: 10%;
   }
 
   .modal {
-    font-size: 1.5rem;
-    height: 200px;
+    font-size: 0.75rem;
+    height: 20%;
+    width: 40%;
   }
 
   .modal-text > p {
-    font-size: 1.5rem;
+    font-size: 0.75rem;
   }
 
   .reset {
-    font-size: 1.25rem;
-    height: 40px;
-    width: 150px;
+    font-size: 0.75rem;
+    height: 20px;
+    width: 120px;
   }
 
   .close {
+    font-size: 2rem;
+  }
+}
+
+/* Extra small devices (phones, 310px and up) */
+@media only screen and (min-width: 310px) {
+  .title-text {
     font-size: 3rem;
+    letter-spacing: 5px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .aside {
+    font-size: 1rem;
+  }
+
+  .shuffle-button {
+    font-size: 1rem;
+  }
+
+  .card-item {
+    height: 30%;
+    width: 15%;
+  }
+
+  .modal {
+    font-size: 1rem;
+    height: 15%;
+    width: 40%;
+  }
+
+  .modal-text > p {
+    font-size: 1rem;
+  }
+
+  .reset {
+    font-size: 1rem;
+    height: 20px;
+    width: 120px;
+  }
+
+  .close {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  .title-text {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .aside {
+    font-size: 1rem;
+  }
+
+  .shuffle-button {
+    font-size: 1rem;
+  }
+
+  .card-item {
+    height: 30%;
+    width: 15%;
+  }
+
+  .modal {
+    font-size: 1rem;
+    height: 20%;
+    width: 40%;
+  }
+
+  .modal-text > p {
+    font-size: 1rem;
+  }
+
+  .reset {
+    font-size: 1rem;
+    height: 20px;
+    width: 120px;
+  }
+
+  .close {
+    font-size: 2rem;
   }
 }
 
@@ -333,37 +424,41 @@ body {
 @media only screen and (min-width: 600px) {
   .title-text {
     font-size: 4rem;
+    letter-spacing: 5px;
+    text-align: center;
   }
 
   .aside {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .shuffle-button {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .card-item {
     height: 30%;
+    width: 15%;
   }
 
   .modal {
-    font-size: 1.5rem;
-    height: 200px;
+    font-size: 1rem;
+    height: 20%;
+    width: 40%;
   }
 
   .modal-text > p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .reset {
-    font-size: 1.25rem;
-    height: 40px;
-    width: 150px;
+    font-size: 1rem;
+    height: 30px;
+    width: 140px;
   }
 
   .close {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -393,7 +488,8 @@ body {
 
   .modal {
     font-size: 1.5rem;
-    height: 225px;
+    height: 20%;
+    width: 30%;
   }
 
   .modal-text > p {
@@ -416,6 +512,7 @@ body {
   .title-text {
     font-size: 4rem;
     letter-spacing: 5px;
+    width: 100%;
   }
 
   .aside {
@@ -433,7 +530,8 @@ body {
 
   .modal {
     font-size: 1.5rem;
-    height: 200px;
+    height: 20%;
+    width: 30%;
   }
 
   .modal-text > p {
@@ -456,6 +554,7 @@ body {
   .title-text {
     font-size: 5rem;
     letter-spacing: 25px;
+    width: 100%;
   }
 
   .aside {
@@ -472,7 +571,8 @@ body {
 
   .modal {
     font-size: 1.5rem;
-    height: 200px;
+    height: 20%;
+    width: 30%;
   }
 
   .modal-text > p {
@@ -490,33 +590,18 @@ body {
   }
 }
 
-
-
 @media only screen and (min-width: 1200px) {
   .title-text {
     font-size: 5rem;
     letter-spacing: 10px;
+    width: 100%;
   }
 
   .modal {
-    height: 230px;
-    width: 48%;
+    height: 20%;
+    width: 30%;
   }
 }
-
-/*
-@media only screen and (min-width: 1460px) {
-  .title-text {
-    font-size: 5rem;
-    letter-spacing: 10px;
-  }
-
-  .modal {
-    height: 225px;
-    width: 45%;
-  }
-}
-*/
 
 .hidden {
   display: none;
