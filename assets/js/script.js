@@ -7,6 +7,8 @@ const accuracyScore = document.querySelector('.accuracy-score');
 const shuffleButton = document.querySelector('.shuffle-button');
 const closeButton = document.querySelector('.close');
 const matchesScore = document.querySelector('.matches-score');
+const clock = document.querySelector('.clock');
+const bodyElement = document.querySelector('body');
 
 var firstCardClicked, secondCardClicked, firstCardClasses, secondCardClasses, maxMatches, matches, gamesPlayed, attempts, accuracy;
 
@@ -22,6 +24,8 @@ mainElement.addEventListener('click', handleClick);
 shuffleButton.addEventListener('click', shuffleCards);
 resetButton.addEventListener('click', shuffleCards);
 closeButton.addEventListener('click', dismissModal);
+bodyElement.addEventListener('load', shuffleCards);
+setInterval(updateClock, 1000);
 
 function handleClick(event) {
   var clickedTarget = event.target;
@@ -103,4 +107,10 @@ function shuffleCards () {
   }
   modalElement.classList.add("hidden");
   resetCards();
+}
+
+function updateClock() {
+  var d = new Date();
+  var t = d.toLocaleTimeString();
+  clock.textContent = t;
 }

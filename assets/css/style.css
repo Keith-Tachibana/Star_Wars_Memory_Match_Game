@@ -6,6 +6,11 @@ body {
   width: 97vw;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .title-text {
   font-size: 5rem;
   letter-spacing: 25px;
@@ -18,6 +23,9 @@ body {
   font-size: 1.5rem;
   color: black;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .aside > div {
@@ -26,11 +34,14 @@ body {
   height: 9%;
   width: 80%;
   border-radius: 15px;
+  border: 2px double #000;
 }
 
-.aside div > * {
-  margin-top: 6%;
-  padding-top: 12%;
+.aside div h4 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 30%;
 }
 
 .games-score, .matches-score, .attempts-score, .accuracy-score {
@@ -88,11 +99,12 @@ body {
   background-color: #6D5A1F;
   animation: shake 0.5s;
   animation-iteration-count: infinite;
+  color: #EA2B1F;
 }
 
 .shuffle-button:active {
   background-color: #6D5A1F;
-  box-shadow: 0 5px #EEF0F2;
+  box-shadow: 0 5px darkgray;
   transform: translateY(4px);
 }
 
@@ -146,7 +158,7 @@ body {
 .card-back:hover {
   border: 2px groove red;
   transform: scale(1.2);
-  box-shadow: 5px 5px red, 10px 10px yellow;
+  box-shadow: 5px 5px #EA2B1F;
   z-index: 10;
 }
 
@@ -199,6 +211,7 @@ body {
   box-shadow: 20px 20px #F90093, 30px 30px #61E294, 40px 40px #B47AEA;
   font-family: "Inconsolata", monospace;
   font-weight: bolder;
+  width: 1000px;
 }
 
 .modal-text {
