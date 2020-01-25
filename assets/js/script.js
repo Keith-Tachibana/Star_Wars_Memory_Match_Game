@@ -24,7 +24,6 @@ mainElement.addEventListener('click', handleClick);
 shuffleButton.addEventListener('click', shuffleCards);
 resetButton.addEventListener('click', shuffleCards);
 closeButton.addEventListener('click', dismissModal);
-bodyElement.addEventListener('load', shuffleCards);
 setInterval(updateClock, 1000);
 
 function handleClick(event) {
