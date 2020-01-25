@@ -35,13 +35,16 @@ body {
   width: 80%;
   border-radius: 15px;
   border: 2px double #000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .aside div h4 {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: 30%;
+  bottom: 15%;
 }
 
 .games-score, .matches-score, .attempts-score, .accuracy-score {
@@ -153,11 +156,12 @@ body {
 .card-back {
   background-image: url("../images/storm-trooper.gif");
   transition: transform .2s;
+  /*opacity: 0.5;*/
 }
 
 .card-back:hover {
-  border: 2px groove red;
-  transform: scale(1.2);
+  border: 3px groove red;
+  transform: scale(1.1);
   box-shadow: 5px 5px #EA2B1F;
   z-index: 10;
 }
@@ -200,7 +204,9 @@ body {
 
 .modal {
   position: fixed;
-  background-image: linear-gradient(-90deg, red, yellow);
+  background-image: url("../images/fireworks.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: black;
   text-align: center;
   top: 50%;
@@ -208,10 +214,11 @@ body {
   transform: translate(-50%, -50%);
   height: 40%;
   font-size: 3rem;
-  box-shadow: 20px 20px #F90093, 30px 30px #61E294, 40px 40px #B47AEA;
+  box-shadow: 10px 10px #DB2B39, 20px 20px #F3A712, 30px 30px #AFA2FF;
   font-family: "Inconsolata", monospace;
   font-weight: bolder;
-  width: 1000px;
+  width: 1500px;
+  border-radius: 15px;
 }
 
 .modal-text {
@@ -219,16 +226,15 @@ body {
   top: 5px;
 }
 
-.modal-text > p {
-  font-family: "Inconsolata", monospace;
-  font-size: 2rem;
+.modal-text h3 {
+  color: white;
+  letter-spacing: 10px;
 }
 
 .close {
-  float: right;
   font-size: 5rem;
   font-weight: bolder;
-  color: #000;
+  color: #fff;
 }
 
 .close:hover, .close:focus {
@@ -246,7 +252,7 @@ body {
   font-size: 1.75rem;
   height: 50px;
   width: 250px;
-  background-color: forestgreen;
+  background-color: #C3A337;
   border-width: 0;
   border-radius: 10px;
   border: 0.5px ridge black;
@@ -272,9 +278,10 @@ body {
 }
 
 .reset:hover {
-  background-color: greenyellow;
+  background-color: #6D5A1F;
   animation: shake 0.5s;
   animation-iteration-count: infinite;
+  color: #EA2B1F;
 }
 
 .reset:hover span {
@@ -287,7 +294,7 @@ body {
 }
 
 .reset:active {
-  background-color: greenyellow;
+  background-color: #6D5A1F;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -308,33 +315,33 @@ body {
 
 @media only screen and (max-width: 310px) {
   .title-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 5px;
     width: 80%;
     text-align: center;
   }
 
   .aside {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
+  }
+
+  .aside > div {
+    align-items: flex-end;
   }
 
   .shuffle-button {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
   }
 
   .card-item {
     height: 30%;
-    width: 10%;
+    width: 12%;
   }
 
   .modal {
     font-size: 0.75rem;
     height: 20%;
     width: 40%;
-  }
-
-  .modal-text > p {
-    font-size: 0.75rem;
   }
 
   .reset {
@@ -351,33 +358,33 @@ body {
 /* Extra small devices (phones, 310px and up) */
 @media only screen and (min-width: 310px) {
   .title-text {
-    font-size: 3rem;
+    font-size: 2.75rem;
     letter-spacing: 5px;
     width: 80%;
     text-align: center;
   }
 
   .aside {
-    font-size: 1rem;
+    font-size: 0.5rem;
+  }
+
+  .aside > div {
+    align-items: flex-end;
   }
 
   .shuffle-button {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 
   .card-item {
     height: 30%;
-    width: 15%;
+    width: 13%;
   }
 
   .modal {
     font-size: 1rem;
     height: 15%;
     width: 40%;
-  }
-
-  .modal-text > p {
-    font-size: 1rem;
   }
 
   .reset {
@@ -400,11 +407,15 @@ body {
   }
 
   .aside {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .aside > div {
+    align-items: flex-start;
   }
 
   .shuffle-button {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .card-item {
@@ -413,17 +424,13 @@ body {
   }
 
   .modal {
-    font-size: 1rem;
+    font-size: 0.9rem;
     height: 20%;
     width: 40%;
   }
 
-  .modal-text > p {
-    font-size: 1rem;
-  }
-
   .reset {
-    font-size: 1rem;
+    font-size: 0.9rem;
     height: 20px;
     width: 120px;
   }
@@ -445,6 +452,10 @@ body {
     font-size: 1rem;
   }
 
+  .aside > div {
+    align-items: flex-start;
+  }
+
   .shuffle-button {
     font-size: 1rem;
   }
@@ -458,10 +469,6 @@ body {
     font-size: 1rem;
     height: 20%;
     width: 40%;
-  }
-
-  .modal-text > p {
-    font-size: 1rem;
   }
 
   .reset {
@@ -478,20 +485,25 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   body {
-    background-size: 300% 300%;
+    background-size: 350% 350%;
   }
 
   .title-text {
-    font-size: 4rem;
+    font-size: 3.75rem;
     letter-spacing: 5px;
+    width: 100%;
   }
 
   .aside {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .aside > div {
+    align-items: flex-end;
   }
 
   .shuffle-button {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .card-item {
@@ -503,10 +515,6 @@ body {
     font-size: 1.5rem;
     height: 20%;
     width: 30%;
-  }
-
-  .modal-text > p {
-    font-size: 1.4rem;
   }
 
   .reset {
@@ -532,6 +540,10 @@ body {
     font-size: 1.5rem;
   }
 
+  .aside > div {
+    align-items: flex-end;
+  }
+
   .shuffle-button {
     font-size: 1.5rem;
   }
@@ -545,10 +557,6 @@ body {
     font-size: 1.5rem;
     height: 20%;
     width: 30%;
-  }
-
-  .modal-text > p {
-    font-size: 1.4rem;
   }
 
   .reset {
@@ -566,16 +574,20 @@ body {
 @media only screen and (min-width: 1200px) {
   .title-text {
     font-size: 5rem;
-    letter-spacing: 25px;
+    letter-spacing: 10px;
     width: 100%;
   }
 
   .aside {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .aside > div {
+    align-items: flex-end;
   }
 
   .shuffle-button {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .card-item {
@@ -588,31 +600,14 @@ body {
     width: 30%;
   }
 
-  .modal-text > p {
-    font-size: 1.4rem;
-  }
-
   .reset {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     height: 40px;
     width: 150px;
   }
 
   .close {
     font-size: 3rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .title-text {
-    font-size: 5rem;
-    letter-spacing: 10px;
-    width: 100%;
-  }
-
-  .modal {
-    height: 20%;
-    width: 30%;
   }
 }
 
