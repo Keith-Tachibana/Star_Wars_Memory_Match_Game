@@ -5,7 +5,7 @@ A single-player gaming application where the player must match pairs of face-dow
 - HTML 5
 - CSS 3
 ## Live Demo
-Try the application live at [my portfolio website](https://www.keith-tachibana.com/portfolio/memoryMatch/index.html)
+Try the application live on [my portfolio website](https://www.keith-tachibana.com/portfolio/memoryMatch/index.html)
 ## Features
 - When the game starts, the card deck is dynamically shuffled
 - The player can choose to re-shuffle the deck again with the shuffle button
