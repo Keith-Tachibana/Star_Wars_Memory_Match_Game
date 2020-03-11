@@ -5,4 +5,4 @@ A single-player gaming application where the player must match pairs of face-dow
 - HTML
 - CSS
 ## Live Demo
-Try the application live at [https://www.keith-tachibana.com/portfolio/memoryMatch/index.html](my portfolio website)
+Try the application live at [https://www.keith-tachibana.com/portfolio/memoryMatch/index.html](https://www.keith-tachibana.com/portfolio/memoryMatch/index.html)
