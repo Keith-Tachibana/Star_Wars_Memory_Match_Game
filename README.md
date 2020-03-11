@@ -5,4 +5,26 @@ A single-player gaming application where the player must match pairs of face-dow
 - HTML
 - CSS
 ## Live Demo
-Try the application live at [https://www.keith-tachibana.com/portfolio/memoryMatch/index.html](https://www.keith-tachibana.com/portfolio/memoryMatch/index.html)
+Try the application live at [my portfolio website](https://www.keith-tachibana.com/portfolio/memoryMatch/index.html)
+## Features
+- When the game starts, the card deck is dynamically shuffled
+- The player can choose to re-shuffle the deck again with the shuffle button
+- If the player flips over 2 cards that do not match, the cards flip back face-down again
+- However if the player flips over 2 matching cards, they remain face-up
+- If the player matches all 9 pairs of cards, a modal is displayed
+- Real-time statistics are captured during game play, such as accuracy and number of games won
+## Preview
+
+## Development
+#### System Requirements
+- HTML 5, CSS 3, JavaScript ES5+
+#### Getting Started
+1. Clone the repository
+  ```shell
+  git clone https://github.com/Keith-Tachibana/Star_Wars_Memory_Match_Game.git
+  ```
+2. Move to cloned folder
+  ```shell
+  cd Star_Wars_Memory_Match_Game/
+  ```
+3. Right click on index.html and open it in your default web browser
