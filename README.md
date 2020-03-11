@@ -14,7 +14,7 @@ Try the application live at [my portfolio website](https://www.keith-tachibana.c
 - If the player matches all 9 pairs of cards, a modal is displayed
 - Real-time statistics are captured during game play, such as accuracy and number of games won
 ## Preview
-
+![Star Wars Memory Match Preview](assets/images/preview.gif "Star Wars Memory Match Preview")
 ## Development
 #### System Requirements
 - Web browser (i.e. Google Chrome, Mozilla Firefox, etc.)
@@ -28,4 +28,4 @@ Try the application live at [my portfolio website](https://www.keith-tachibana.c
   ```shell
   cd Star_Wars_Memory_Match_Game/
   ```
-3. Right click on index.html and open it in your default web browser
+3. Right click on index.html and select open to view it in your default web browser
