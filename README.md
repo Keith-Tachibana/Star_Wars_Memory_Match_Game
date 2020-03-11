@@ -24,7 +24,7 @@ Try the application live on [my portfolio website](https://www.keith-tachibana.c
   ```shell
   git clone https://github.com/Keith-Tachibana/Star_Wars_Memory_Match_Game.git
   ```
-2. Move to cloned folder
+2. Change directory to cloned folder
   ```shell
   cd Star_Wars_Memory_Match_Game/
   ```
