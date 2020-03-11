@@ -1,9 +1,9 @@
 # Star Wars Memory Match
 A single-player gaming application where the player must match pairs of face-down cards with a Star Wars theme.
 ## Technologies Used
-- JavaScript
-- HTML
-- CSS
+- JavaScript ES5
+- HTML 5
+- CSS 3
 ## Live Demo
 Try the application live at [my portfolio website](https://www.keith-tachibana.com/portfolio/memoryMatch/index.html)
 ## Features
@@ -17,7 +17,8 @@ Try the application live at [my portfolio website](https://www.keith-tachibana.c
 
 ## Development
 #### System Requirements
-- HTML 5, CSS 3, JavaScript ES5+
+- Web browser (i.e. Google Chrome, Mozilla Firefox, etc.)
+- Internet connection
 #### Getting Started
 1. Clone the repository
   ```shell
