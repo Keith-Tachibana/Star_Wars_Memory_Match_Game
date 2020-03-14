@@ -1,14 +1,22 @@
-body {
-  background-image: url("../images/background.gif");
-  background-size: 100% 150%;
-  background-repeat: no-repeat;
-  height: 97vh;
-  width: 97vw;
+* {
+  box-sizing: border-box;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+}
+
+.video-bg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+  z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
 }
 
 .title-text {
@@ -21,7 +29,7 @@ body {
 .aside {
   font-family: "Inconsolata", monospace;
   font-size: 1.5rem;
-  color: black;
+  color: #FFF;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -34,7 +42,7 @@ body {
   height: 9%;
   width: 80%;
   border-radius: 15px;
-  border: 2px double #000;
+  border: 2px groove #000;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -48,7 +56,7 @@ body {
 }
 
 .games-score, .matches-score, .attempts-score, .accuracy-score {
-  color: red;
+  color: #00FF00;
 }
 
 .start {
@@ -90,12 +98,13 @@ body {
   border-radius: 15px;
   font-weight: bold;
   font-style: italic;
-  border: 2px double #000;
+  border: 2px groove #000;
   outline: none;
   cursor: pointer;
   position: relative;
   transition-duration: 0.4s;
   overflow: hidden;
+  color: #000;
 }
 
 .shuffle-button:hover {
@@ -151,19 +160,23 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
+  border-radius: 15px;
 }
 
 .card-back {
   background-image: url("../images/storm-trooper.gif");
   transition: transform .2s;
-  /*opacity: 0.5;*/
 }
 
 .card-back:hover {
-  border: 3px groove red;
+  border: 1px groove #f0f;
   transform: scale(1.1);
-  box-shadow: 5px 5px #EA2B1F;
+  box-shadow:
+        0 0 30px 15px #fff,
+        0 0 50px 30px #f0f,
+        0 0 70px 45px #0ff;
   z-index: 10;
+  cursor: pointer;
 }
 
 .chewbacca {
@@ -204,30 +217,32 @@ body {
 
 .modal {
   position: fixed;
-  background-image: url("../images/fireworks.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: black;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 40%;
-  font-size: 3rem;
-  box-shadow: 10px 10px #DB2B39, 20px 20px #F3A712, 30px 30px #AFA2FF;
-  font-family: "Inconsolata", monospace;
-  font-weight: bolder;
-  width: 1500px;
-  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: auto;
+  width: auto;
+  z-index: 1000;
+	min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-text {
-  position: relative;
-  top: 5px;
+  background-image: url("../images/fireworks.gif");
+  font-family: "Inconsolata", monospace;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  height: 400px;
 }
 
 .modal-text h3 {
-  color: white;
+  color: #00FF00;
   letter-spacing: 10px;
 }
 
@@ -313,7 +328,7 @@ body {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@media only screen and (max-width: 310px) {
+@media only screen and (max-width: 309px) {
   .title-text {
     font-size: 2.5rem;
     letter-spacing: 5px;
@@ -339,66 +354,123 @@ body {
   }
 
   .modal {
-    font-size: 0.75rem;
-    height: 20%;
-    width: 40%;
+    height: 200px;
+    width: 275px;
+  }
+
+  .modal-text h3 {
+    font-size: 0.8rem;
   }
 
   .reset {
     font-size: 0.75rem;
     height: 20px;
-    width: 120px;
+    width: 40%;
   }
 
   .close {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
 /* Extra small devices (phones, 310px and up) */
-@media only screen and (min-width: 310px) {
+@media only screen and (min-width: 310px) and (max-width: 509px) {
   .title-text {
     font-size: 2.75rem;
     letter-spacing: 5px;
-    width: 80%;
     text-align: center;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
   }
 
   .aside {
     font-size: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 75px;
+    left: 8px;
+    justify-content: space-between;
+  }
+
+  .games-score,
+  .matches-score,
+  .attempts-score,
+  .accuracy-score {
+    width: 30px;
   }
 
   .aside > div {
-    align-items: flex-end;
+    height: 5%;
+    margin: 0 1px;
   }
 
   .shuffle-button {
     font-size: 0.5rem;
+    height: 37px;
+    position: relative;
+    bottom: 1px;
+    overflow: visible;
+  }
+
+  .games-text,
+  .matches-text,
+  .attempts-text,
+  .accuracy-text {
+    margin-left: 2px;
+    font-size: 0.5rem;
+  }
+
+  #gameCards {
+    display: flex;
+    align-items: center;
   }
 
   .card-item {
     height: 30%;
-    width: 13%;
+    width: 14%;
   }
 
-  .modal {
-    font-size: 1rem;
-    height: 15%;
-    width: 40%;
+  .main {
+    height: 50%;
+    position: relative;
+    right: 28px;
+    width: 375px;
+    bottom: 25px;
+  }
+
+  .main > div {
+    margin: 0 4px;
+  }
+
+  .modal-text h3 {
+    font-size: 1.15rem;
+  }
+
+  .modal-text {
+    height: 200px;
+    width: 350px;
   }
 
   .reset {
-    font-size: 1rem;
-    height: 20px;
-    width: 120px;
+    font-size: 0.9rem;
+    height: 30px;
+    width: 40%;
   }
 
   .close {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
-@media only screen and (min-width: 510px) {
+@media only screen and (min-width: 510px) and (max-width: 599px) {
   .title-text {
     font-size: 3rem;
     letter-spacing: 5px;
@@ -414,6 +486,11 @@ body {
     align-items: flex-start;
   }
 
+  .aside div h4 {
+    position: relative;
+    top: 10%;
+  }
+
   .shuffle-button {
     font-size: 0.9rem;
   }
@@ -424,15 +501,18 @@ body {
   }
 
   .modal {
-    font-size: 0.9rem;
-    height: 20%;
-    width: 40%;
+    height: 250px;
+    width: 500px;
+  }
+
+  .modal-text h3 {
+    font-size: 1.15rem;
   }
 
   .reset {
     font-size: 0.9rem;
-    height: 20px;
-    width: 120px;
+    height: 30px;
+    width: 30%;
   }
 
   .close {
@@ -441,11 +521,16 @@ body {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 767px) {
   .title-text {
     font-size: 4rem;
     letter-spacing: 5px;
     text-align: center;
+  }
+
+  .title-container {
+    display: flex;
+    justify-content: center;
   }
 
   .aside {
@@ -456,6 +541,18 @@ body {
     align-items: flex-start;
   }
 
+  .games-text,
+  .games-score,
+  .matches-text,
+  .matches-score,
+  .attempts-text,
+  .attempts-score,
+  .accuracy-text,
+  .accuracy-score {
+    position: relative;
+    top: 5px;
+  }
+
   .shuffle-button {
     font-size: 1rem;
   }
@@ -465,16 +562,19 @@ body {
     width: 15%;
   }
 
-  .modal {
-    font-size: 1rem;
-    height: 20%;
-    width: 40%;
+  .modal-text {
+    height: 250px;
+    width: 500px;
+  }
+
+  .modal-text h3 {
+    font-size: 1.25rem;
   }
 
   .reset {
     font-size: 1rem;
     height: 30px;
-    width: 140px;
+    width: 30%;
   }
 
   .close {
@@ -483,7 +583,7 @@ body {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   body {
     background-size: 350% 350%;
   }
@@ -492,6 +592,7 @@ body {
     font-size: 3.75rem;
     letter-spacing: 5px;
     width: 100%;
+    text-align: center;
   }
 
   .aside {
@@ -506,21 +607,36 @@ body {
     font-size: 1.25rem;
   }
 
+  .games-text,
+  .games-score,
+  .matches-text,
+  .matches-score,
+  .attempts-text,
+  .attempts-score,
+  .accuracy-text,
+  .accuracy-score {
+    position: relative;
+    top: 4px;
+  }
+
   .card-item {
     height: 30%;
     width: 15%;
   }
 
   .modal {
+    height: 300px;
+    width: 700px;
+  }
+
+  .modal-text h3 {
     font-size: 1.5rem;
-    height: 20%;
-    width: 30%;
   }
 
   .reset {
-    font-size: 1.25rem;
+    font-size: 1rem;
     height: 40px;
-    width: 150px;
+    width: 25%;
   }
 
   .close {
@@ -529,7 +645,7 @@ body {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .title-text {
     font-size: 4rem;
     letter-spacing: 5px;
@@ -537,15 +653,27 @@ body {
   }
 
   .aside {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .aside > div {
-    align-items: flex-end;
+    align-items: flex-start;
   }
 
   .shuffle-button {
     font-size: 1.5rem;
+  }
+
+  .games-text,
+  .games-score,
+  .matches-text,
+  .matches-score,
+  .attempts-text,
+  .attempts-score,
+  .accuracy-text,
+  .accuracy-score {
+    position: relative;
+    top: 0.1px;
   }
 
   .card-item {
@@ -554,19 +682,22 @@ body {
   }
 
   .modal {
-    font-size: 1.5rem;
-    height: 20%;
-    width: 30%;
+    height: 325px;
+    width: 950px;
+  }
+
+  .modal-text h3 {
+    font-size: 2rem;
   }
 
   .reset {
     font-size: 1.25rem;
     height: 40px;
-    width: 150px;
+    width: 20%;
   }
 
   .close {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -590,24 +721,35 @@ body {
     font-size: 1.5rem;
   }
 
-  .card-item {
-    height: 30%;
+  .modal {
+    height: 350px;
+    width: 1000px;
   }
 
-  .modal {
-    font-size: 1.5rem;
-    height: 20%;
-    width: 30%;
+  .games-text,
+  .games-score,
+  .matches-text,
+  .matches-score,
+  .attempts-text,
+  .attempts-score,
+  .accuracy-text,
+  .accuracy-score {
+    position: relative;
+    top: 7px;
+  }
+
+  .modal-text h3 {
+    font-size: 2.25rem;
   }
 
   .reset {
     font-size: 1.5rem;
     height: 40px;
-    width: 150px;
+    width: 22%;
   }
 
   .close {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
