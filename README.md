@@ -2,7 +2,7 @@
 A single-player gaming application where the player must match pairs of face-down cards with a Star Wars theme.
 ## Technologies Used
 |  **Dependency**   |   **Version**    |
-|-------------------|----------------=:|
+|-------------------|-----------------:|
 | CSS               |        3         |
 | HTML              |        5         | 
 | JavaScript        |   ES5 or higher  |
