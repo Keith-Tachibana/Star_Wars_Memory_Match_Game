@@ -16,7 +16,7 @@ Try the application live on [my portfolio website](https://www.keith-tachibana.c
 - _*_ If the player matches all 9 pairs of cards, a modal is displayed
 - _*_ Real-time statistics are captured during game play, such as accuracy and number of games won
 ## Preview
-![Star Wars Memory Match Preview](assets/images/preview.gif "Star Wars Memory Match Preview")
+![Star Wars Memory Match Preview](preview.gif "Star Wars Memory Match Preview")
 ## Development
 #### System Requirements
 None
