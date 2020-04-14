@@ -19,8 +19,7 @@ Try the application live on [my portfolio website](https://www.keith-tachibana.c
 ![Star Wars Memory Match Preview](assets/images/preview.gif "Star Wars Memory Match Preview")
 ## Development
 #### System Requirements
-- _*_ Internet connection
-- _*_ Web browser (i.e. Google Chrome, Mozilla Firefox, etc.)
+None
 #### Getting Started
 1. Clone the repository
   ```shell
