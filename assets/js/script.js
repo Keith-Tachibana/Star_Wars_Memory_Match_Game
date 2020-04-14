@@ -9,9 +9,9 @@ const closeButton = document.querySelector('.close');
 const matchesScore = document.querySelector('.matches-score');
 const bodyElement = document.querySelector('body');
 
-var firstCardClicked, secondCardClicked, firstCardClasses, secondCardClasses, maxMatches, matches, gamesPlayed, attempts, accuracy;
+let firstCardClicked, secondCardClicked, firstCardClasses, secondCardClasses, maxMatches, matches, gamesPlayed, attempts, accuracy;
 
-var cardDeck = ['chewbacca', 'emperor', 'hansolo', 'leia', 'luke', 'obiwan', 'padme', 'vader', 'yoda', 'chewbacca', 'emperor', 'hansolo', 'leia', 'luke', 'obiwan', 'padme', 'vader', 'yoda'];
+const cardDeck = ['chewbacca', 'emperor', 'hansolo', 'leia', 'luke', 'obiwan', 'padme', 'vader', 'yoda', 'chewbacca', 'emperor', 'hansolo', 'leia', 'luke', 'obiwan', 'padme', 'vader', 'yoda'];
 
 accuracy = 0;
 attempts = 0;
@@ -25,7 +25,7 @@ resetButton.addEventListener('click', shuffleCards);
 closeButton.addEventListener('click', dismissModal);
 
 function handleClick(event) {
-  var clickedTarget = event.target;
+  let clickedTarget = event.target;
 
   if (clickedTarget.className.indexOf("card-back") === -1) {
     return;
@@ -77,14 +77,14 @@ function dismissModal () {
 
 function resetCards () {
   mainElement.innerHTML = '';
-  var newCardDeck = cardDeck.sort(function() { return 0.5-Math.random() });
-  for (var i = 0; i < newCardDeck.length; i++) {
-    var newCardItem = document.createElement('div');
+  let newCardDeck = cardDeck.sort(function() { return 0.5-Math.random() });
+  for (let i = 0; i < newCardDeck.length; i++) {
+    let newCardItem = document.createElement('div');
     newCardItem.classList.add("card-item", "col-2");
-    var newCardFront = document.createElement('div');
+    let newCardFront = document.createElement('div');
     newCardFront.className = "card-front";
     newCardFront.classList.add(newCardDeck[i]);
-    var newCardBack = document.createElement('div');
+    let newCardBack = document.createElement('div');
     newCardBack.classList.add("card-back");
     newCardItem.append(newCardFront, newCardBack);
     mainElement.appendChild(newCardItem);
@@ -98,8 +98,8 @@ function shuffleCards () {
   attemptsScore.textContent = attempts;
   accuracy = "0.00";
   accuracyScore.textContent = accuracy + '%';
-  var cardsHidden = document.querySelectorAll('.hidden');
-  for (var i = 0; i < cardsHidden.length; i++) {
+  let cardsHidden = document.querySelectorAll('.hidden');
+  for (let i = 0; i < cardsHidden.length; i++) {
     cardsHidden[i].classList.remove("hidden");
   }
   modalElement.classList.add("hidden");
