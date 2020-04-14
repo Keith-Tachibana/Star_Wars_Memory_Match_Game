@@ -5,7 +5,7 @@ A single-player gaming application where the player must match pairs of face-dow
 |-------------------|-----------------:|
 | CSS               |        3         |
 | HTML              |        5         | 
-| JavaScript        |   ES5 or higher  |
+| JavaScript        |       ES6        |
 ## Live Demo
 Try the application live on [my portfolio website](https://www.keith-tachibana.com/portfolio/memoryMatch/index.html)
 ## Features
