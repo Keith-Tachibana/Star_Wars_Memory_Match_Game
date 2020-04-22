@@ -29,4 +29,4 @@ None
   ```shell
   cd Star_Wars_Memory_Match_Game/
   ```
-3. Right click on index.html and select open to view it in your default web browser
+3. Right click on index.html and select "open" to view it in your default web browser
