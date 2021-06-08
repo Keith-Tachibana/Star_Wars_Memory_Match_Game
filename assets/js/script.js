@@ -25,7 +25,7 @@ resetButton.addEventListener('click', shuffleCards);
 closeButton.addEventListener('click', dismissModal);
 
 function handleClick(event) {
-  let clickedTarget = event.target;
+  const clickedTarget = event.target;
 
   if (clickedTarget.className.indexOf("card-back") === -1) {
     return;
@@ -73,18 +73,23 @@ function handleClick(event) {
 
 function dismissModal () {
   modalElement.classList.add("hidden");
+  matchesScore.textContent = 0;
+  attemptsScore.textContent = 0;
+  accuracyScore.textContent = '0.00%';
+  resetCards();
+
 }
 
 function resetCards () {
   mainElement.innerHTML = '';
-  let newCardDeck = cardDeck.sort(function() { return 0.5-Math.random() });
+  const newCardDeck = cardDeck.sort(function() { return 0.5-Math.random() });
   for (let i = 0; i < newCardDeck.length; i++) {
-    let newCardItem = document.createElement('div');
+    const newCardItem = document.createElement('div');
     newCardItem.classList.add("card-item", "col-2");
-    let newCardFront = document.createElement('div');
+    const newCardFront = document.createElement('div');
     newCardFront.className = "card-front";
     newCardFront.classList.add(newCardDeck[i]);
-    let newCardBack = document.createElement('div');
+    const newCardBack = document.createElement('div');
     newCardBack.classList.add("card-back");
     newCardItem.append(newCardFront, newCardBack);
     mainElement.appendChild(newCardItem);
@@ -98,7 +103,7 @@ function shuffleCards () {
   attemptsScore.textContent = attempts;
   accuracy = "0.00";
   accuracyScore.textContent = accuracy + '%';
-  let cardsHidden = document.querySelectorAll('.hidden');
+  const cardsHidden = document.querySelectorAll('.hidden');
   for (let i = 0; i < cardsHidden.length; i++) {
     cardsHidden[i].classList.remove("hidden");
   }

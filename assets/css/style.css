@@ -252,7 +252,8 @@
   color: #fff;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
   cursor: pointer;
   color: #aaaaaa;
   text-decoration: none;
@@ -581,6 +582,12 @@
 
   .close {
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 638px) and (orientation: landscape) {
+  body {
+    background-size: 125% 125%;
   }
 }
 
